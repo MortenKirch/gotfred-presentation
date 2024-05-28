@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt os</title>
+    <meta name="title" content="Kontakt Aarhus">
+    <meta name="description" content="Gotfred er et patisserie i midten af Aarhus, tæt på Dokken. Vi laver hjemmelavet sæsompræget konditori kager af højeste kvalitet.">
+    <meta name="keywords" content="patisserie, konditori, bager, café, catering, gotfred, desserter, bageri, portionskager">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="DK-82" />
+    <meta name="geo.placename" content="Aarhus" />
+    <meta name="geo.position" content="56.154937;10.212208" />
+    <meta name="ICBM" content="56.154937, 10.212208" />
+
+
+    
+    <link rel="icon" href="/pictures/logo/favicon.png" type="image/png">
+
+
+    <!-- external references -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="module" src="/javascript/nav.js"></script>
+</head>
+<body>
+
+
+  <header class="nav-header">
+    <nav class="nav container">
+        <div class="nav-logo-container">
+          <a href="/index.html" class="nav-logo">
+              <img src="/pictures/logo/gotfred-logo.webp" alt="gotfred logo blå">
+          </a>
+          
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="fa-solid fa-xmark nav-close"></i> 
+            <i class="fa-solid fa-bars nav-burger"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+              <li><a href="kager-og-bestilling.html" class="nav-link">kager & bestilling</a></li>
+              <li><a href="catering.html" class="nav-link">catering</a></li>
+              <li><a href="om-gotfred.html" class="nav-link">om gotfred</a></li>
+              <li><a href="kontakt.html" class="nav-link">kontakt os</a></li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+
+  <h2 class="kontakt-h2">ÅBNINGSTIDER OG KONTAKTINFORMATION</h2>
+  <div class="konkakt-container">
+    <section class="kontact-info">
+        <div class="info-details">
+            <div class="info-item">
+              <i class="fa-regular fa-clock info-clock" style="color: #3166b3;" aria-label="klok ikon"></i>
+              <p class="åbningstider-tekst">Tirsdag - Fredag 12:30 - 17:30<br>Lørdag - Søndag 11:30 - 17:30</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope" aria-label="mail ikon"></i>
+                <p>gotfred.aarhus@outlook.dk</p>
+            </div>
+            <div class="info-item">
+              <i class="fa-brands fa-instagram" aria-label="instagram ikon"></i>
+              <p>gotfred.aarhus</p>
+            </div>
+            <div class="info-item">
+              <i class="fa-brands fa-square-facebook" aria-label="facebook ikon"></i>
+              <p>Gotfred Aarhus</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt" aria-label="maps ikon"></i>
+              <p>Havnegade 24, 8000 Aarhus C</p>
+            </div>
+          </div>
+     </section>
+    <div class="maps-container">
+        <iframe class="maps-kontakt" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.1253739896797!2d10.20955717690704!3d56.1549368732357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3f9d981d1b81%3A0x704e5fb03ca51da!2sgotfred!5e0!3m2!1sda!2sdk!4v1716277383679!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="info-item find-vej">
+          <a href="https://www.google.com/maps/place/Havnegade+24,+8000+Aarhus/@56.1549399,10.2095572,16z/data=!3m1!4b1!4m6!3m5!1s0x464c3f90eb1d349b:0x7fe31394f6f603ec!8m2!3d56.1549369!4d10.2121321!16s%2Fg%2F11bw40cz5g?entry=ttu" class="find-vejen-button">FIND VEJ</a>
+        </div>
+    </div>
+  </div>
+    <section class="kontaktos-form">
+        <h2 id="kontakt">KONTAKT OS</h2>
+        <div class="kontaktosform-section">
+            <h3 id="udfyldinfo">UDFYLD INFORMATIONER</h3>
+            <form class="kontakt-os-form" id="kontakt-form" action="https://formspree.io/f/mvoenapn" method="POST">
+                <input type="text" id="name" name="Navn" placeholder="Navn" required>
+                <input type="email" id="email" name="Email" placeholder="E-mail" required>
+                <textarea id="message" name="Besked" placeholder="Skriv din besked her..." required></textarea>
+                <button id="kontaktos" type="submit">SEND</button>
+            </form>
+        </div>
+    </section>
+    
+    <section class="faq">
+        <h2>FAQ</h2>
+
+
+        <br><br>
+
+        <h3>Bestilling</h3>
+        <div class="faq-item">
+          <div class="question">Hvornår skal man senest sende en kagebestilling til jer?</div>
+          <div class="answer">Det kommer an på antallet. Ved mindre bestillinger skal der bestilles dagen inden.</div>
+      </div>
+       <div class="faq-item">
+          <div class="question">Hvor lægger jeg en bestilling?</div>
+          <div class="answer">For forudbestilling; under 'kager og bestilling'. For større events; under 'catering'.</div>
+      </div>
+       <div class="faq-item">
+          <div class="question">Kan man forudbestille kagerne?</div>
+          <div class="answer">Ja, du kan sagtens forudbestille kagerne.</div>
+      </div>
+       <div class="faq-item">
+          <div class="question">Hvordan kan jeg sikre mig, at jeg får mine kager?</div>
+          <div class="answer">Udfyld bestillingsformularen i 'kager og bestilling'. Du får herefter en bekræftelsesmail.</div>
+      </div>
+       <div class="faq-item">
+         <div class="question">Laver I større kager til events på bestilling?</div>
+         <div class="answer">Ja, det gør vi. Prisen afhænger af antal kuverter og design. Herefter vil du komme i kontakt med vores konditor.</div>
+      </div>
+
+
+      <br><br><br>
+
+      <h3>Allergener</h3>
+
+      <div class="faq-item">
+        <div class="question">Kan man bestille laktosefri, glutenfri eller lign. kager?</div>
+        <div class="answer">Ja, det kan du godt. Udfyld venligst kontaktformularen i 'kontakt os' for allergener og særlige hensyn.</div>
+     </div>
+
+
+     <br><br><br>
+
+     <h3>Mix box</h3>
+     <div class="faq-item">
+       <div class="question">Hvor mange kager skal man bestille til en mix box pre-order? </div>
+       <div class="answer">Minimumsbestillingen er 4 stk.</div>
+     </div>
+     <div class="faq-item">
+      <div class="question">Hvad koster en mix box?</div>
+      <div class="answer">4 stks. for 188 kr. og 6 stks. for 280 kr.</div>
+    </div>
+    <div class="faq-item">
+      <div class="question">Hvilke kager har I til mix box? </div>
+      <div class="answer">Pt. tilbyder vi følgende kager i mix box: Banoffee, Fragilité, Gammeldags æblekage, Hindbærtærte, Peach Melba og Yuzutærte </div>
+    </div>
+
+    <br><br><br>
+
+    <h3>Petite mix</h3>
+
+    <div class="faq-item">
+      <div class="question">Hvad er prisen på petite mix? </div>
+      <div class="answer">10 stks. for 145 kr.</div>
+    </div>
+    <div class="faq-item">
+      <div class="question">Hvilke kager har I til petite mix?</div>
+      <div class="answer">Pt. tilbyder vi følgende kager til petite mix: Citron Marengs, Mango Passion og Passion Marengs</div>
+    </div>
+
+  </section>
+<footer class="footer">
+  <div class="container">
+      <div class="social-icons">
+          <a href="https://www.google.com/maps/place/Havnegade+24,+8000+Aarhus/@56.1549399,10.2095572,16z/data=!3m1!4b1!4m6!3m5!1s0x464c3f90eb1d349b:0x7fe31394f6f603ec!8m2!3d56.1549369!4d10.2121321!16s%2Fg%2F11bw40cz5g?entry=ttu" target="_blank"><i class="fas fa-map-marker-alt" aria-label="maps ikon"></i></a>
+          <a href="https://www.facebook.com/p/Gotfred-Aarhus-100083096210390/" target="_blank"><i class="fa-brands fa-square-facebook" aria-label="facebook ikon"></i></a>
+          <a href="https://www.instagram.com/gotfred.aarhus" target="_blank"><i class="fab fa-instagram" aria-label="instagram ikon"></i></a>
+          <a href="https://www.findsmiley.dk/1221267" target="_blank"><img src="/pictures/ikoner/sm1as.png" alt="fødevarestyrelsen smiley"></a>
+      </div>
+
+      <div class="info">
+          <p class="åbningstider-tekst">Tirsdag - Fredag 12:30 - 17:30<br>Lørdag - Søndag 11:30 - 17:30</p>
+      </div>
+      
+      <div class="mail-info">
+          <a href="mailto:gotfred.aarhus@outlook.dk"><i class="fa-regular fa-envelope" aria-label="Mail ikon"></i></a>
+          <p>Skriv til os</p>
+      </div>
+      
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+    "kager":[
+      { "navn": "BANOFFEE",
+        "billede": "/pictures/produkter/banoffee.webp",
+        "beskrivelse": "Friskskårne bananer, passionsfrugt, flødeskum, hjemmelavet saltmælkssyltetøj og bastogne",
+        "ikoner": ["/pictures/ikoner/egg.png", "/pictures/ikoner/gluten-med.png", "/pictures/ikoner/laktose-med.png", "/pictures/ikoner/noedder-med.png"],
+        "pris": 100
+  
+      },
+      {
+        "navn": "FRAGILITÉ",
+        "billede": "/pictures/produkter/fragillite.webp",
+        "beskrivelse": "Hasselnøddemarengs, mokkasmørcreme med kaffe fra @moodcoffee_aarhus, to slags nougatmousse, spiselige blomster",
+        "ikoner": ["/pictures/ikoner/egg.png", "/pictures/ikoner/gluten-med.png", "/pictures/ikoner/laktose-med.png", "/pictures/ikoner/noedder-med.png"],
+        "pris": 130
+      },
+      {
+        "navn": "GAMMELDAGS ÆBLEKAGE",
+        "billede": "/pictures/produkter/aeble-kage.webp",
+        "beskrivelse": "hjemmelavet sej dansk makron, en fløjlsblød saltet karamel, syrlig æblekompot og en helt igennem fantastisk creme fraiche-mousse",
+        "ikoner": ["/pictures/ikoner/egg.png", "/pictures/ikoner/gluten-uden.png", "/pictures/ikoner/laktose-med.png", "/pictures/ikoner/noedder-med.png"],
+        "pris": 120
+      },
+      {
+        "navn": "HINDBÆRTÆRTE",
+        "billede": "/pictures/produkter/hindbaer-taerte.webp",
+        "beskrivelse": "sprød tærtebund, mandelfrangipane, skarp hindbærkompot og en fløjlsblød chokoladehindbærmousse",
+        "ikoner": ["/pictures/ikoner/egg.png", "/pictures/ikoner/gluten-med.png", "/pictures/ikoner/laktose-med.png", "/pictures/ikoner/noedder-med.png"],
+        "pris": 120
+      },
+      {
+        "navn": "PEACH MELBA",
+        "billede": "/pictures/produkter/peach-melba.webp",
+        "beskrivelse": "mandelfrangipanebund, syrlig hindbær-marmelade og ferskenkompot gemt midt i en cremefraiche-vaniljemousse",
+        "ikoner": ["/pictures/ikoner/egg.png", "/pictures/ikoner/gluten-med.png", "/pictures/ikoner/laktose-med.png", "/pictures/ikoner/noedder-med.png"],
+        "pris": 120
+      },
+      {
+        "navn": "YUZU TÆRTE",
+        "billede": "/pictures/produkter/yuzu-taerte.webp",
+        "beskrivelse": "en sprød tærtebund, birkesvamp, syrlig lemon curd, blød yuzu-fromage og en fluffy og sød marengs",
+        "ikoner": ["/pictures/ikoner/egg.png", "/pictures/ikoner/gluten-med.png", "/pictures/ikoner/laktose-med.png", "/pictures/ikoner/noedder-uden.png"],
+        "pris": 120
+      }
+   
+    ]
+  }
+  

@@ -1,0 +1,1835 @@
+/* root variables */
+:root {
+   --lightblue: #E7F1FF;
+   --blue: #2D65B6;
+   --yellow: #F8EEB7;
+   --beige: #E8E7E4;
+   --offblack: #111111; 
+   --offwhite: #F8F9FA;
+   --light: 300;
+   --regular: 400;
+   --medium: 500;
+}
+
+/* global selectors*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Montserrat', sans-serif;
+}
+body{
+  overflow-x: hidden;
+  
+}
+a {
+  text-decoration: none;
+  
+}
+
+ul {
+  list-style: none;
+}
+
+h1{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--blue);
+  font-weight: var(--medium);
+  font-family:'Montserrat', sans-serif;
+  margin: 70px 0px 20px 0px;
+}
+
+h2{
+  font-family:'Montserrat', sans-serif;
+  color: var(--blue);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: var(--light);
+}
+
+/* style af forside */
+
+
+/* Sæsonkage */
+.season-text {
+  background-color: var(--yellow);
+  width: 17rem;
+  height: 5rem;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  margin-top: 5rem;
+  padding-top: 0.6rem;
+}
+
+.season-text h2 {
+  color: var(--blue);
+  text-align: center;
+}
+
+.season-text p {
+  font-weight: var(--light);
+  color: var(--blue);
+  text-align: right;
+  padding-right: 2rem;
+}
+
+/* Sæsonkage baggrunds billede. */
+
+.forside-header {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(../pictures/forside-saesonkage.webp);
+  width: 95%;
+ 
+  height: 82vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2rem auto;
+}
+
+/* Gotfred cafe beskrivelse. */
+
+.main-forside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.gotfred-forside-text {
+  background-color: var(--lightblue);
+  height: 80vh;
+  width: 17rem;
+  line-height: 1.5;
+  padding: 2rem 1.4rem 1.4rem;
+  font-size: 1.1rem;
+  color: var(--offblack);
+}
+.gotfred-forside-text p {
+  color: var(--offblack);
+  text-align: left;
+}
+
+.gotfred-forside-picture img {
+  height: 80vh;
+  width: auto;
+}
+
+/* Forside bestil */
+
+.forside-bestil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../pictures/forside-bestil.webp);
+  max-width: 95%;
+  height: 80vh;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.bestil-kage-banner{
+  background-color: var(--yellow);
+  width: 34rem;
+  height: 3rem;
+  border-radius: 3rem;
+}
+
+.bestil-kage-banner h2 {
+  font-size: 1.4rem;
+  padding-top: 0.8rem;
+  font-weight: var(--regular);
+}
+
+
+.bestil-section h1 a {
+  margin: 0 auto;
+  font-weight: var(--medium);
+}
+
+
+.bestil-section a {
+  background-color: var(--offwhite);
+  margin: 0 auto;
+  padding: 0.45rem 2rem;
+  color: var(--blue);
+  border-radius: 50px;
+  font-weight: 400;
+  margin-top: 2rem;
+ 
+}
+.bestil-section{
+  display: flex;
+  flex-direction: column;
+}
+
+/* forside drinks slider */
+
+.forside-drikke h2 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-weight: var(--medium);
+  font-size: 2rem;
+}
+
+#drinkSlide{
+  width: 95%;
+  margin: 0 auto;
+}
+
+#drinkImage {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+  margin: 0 auto;
+}
+#drinkType {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* Forside bog */
+
+.forside-bog {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3rem;
+  background-image: url(../pictures/pattern-yellow.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+ margin-top: 4rem;
+  margin-bottom: 10rem;
+}
+.forside-bog img {
+  width: 35%;
+  object-fit: cover;
+}
+
+.forside-bog-text {
+  background-color: var(--yellow);
+  width: 30rem;
+  line-height: 1.75;
+  padding: 1.5rem;
+  
+}
+
+.forside-bog-text p {
+  color: var(--offblack);
+  font-size: 1.1rem;
+  
+  margin: 0 auto;
+}
+
+.forside-bog-text h2 {
+  color: var(--blue);
+  font-weight: var(--medium);
+  font-size: 2rem;
+  margin-bottom: 2.2rem;
+}
+
+.forside-bog-text a {
+  background-color: var(--blue);
+  padding: 0.7rem 1.15rem;
+  color: var(--yellow);
+  font-weight: var(--regular);
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+
+#forhandlerknap{
+  margin-left: 7rem;
+ 
+    background-color:var(--blue);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px; 
+}
+
+#eapps-instagram-feed-1{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%!important;
+  margin-bottom: 1.5rem;
+}
+
+
+
+/* style af kager og bestilling */
+
+.guide-tekst{
+  width: 56vw;
+  display: flex;
+  line-height: 2rem;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: var(--offblack);
+  font-weight: var(--regular);
+  font-size: 1.2rem;
+}
+
+.container-kagebox{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+  margin-bottom: 2rem;
+}
+
+.container-kagebox p {
+  color: var(--offblack);
+  font-style: italic;
+}
+
+.container-beige-4{
+width: 150px;
+height: 150px;
+background-color: var(--beige);
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 10px;
+padding: 15px;
+margin-bottom: 15px;
+}
+
+.container-blue-round{
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  background-color: var(--blue);
+}
+.container-beige-6{
+  width: 225px;
+  height: 150px;
+  background-color: var(--beige);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+ 
+}
+
+.forudbestil-kager-h2 {
+  font-family:'Montserrat', sans-serif;
+  font-weight: var(--medium);
+  font-size: 1.8rem;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+
+#myForm{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  width: 90vw;
+  margin: auto;
+
+}
+
+.produkt-figure{
+max-width: 300px;
+margin-bottom: 2rem;
+
+}
+.produkt-overskrift{
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--offblack);
+  font-weight: var(--light);
+  margin: 30px 0px 20px 0px;
+
+}
+
+.produkt-information{
+  border: 0.25px solid var(--offblack);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.produkt-billede{
+max-width: 300px;
+height: auto;
+
+}
+
+.produkt-ikoner{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 1.4rem;
+}
+
+.produkt-ikoner img{
+width: 18%;
+height: auto;
+margin: 0 4px;
+}
+
+.produkt-p{
+  font-family:'Montserrat', sans-serif;
+  color: var(--offblack);
+  font-weight: 300;
+  font-size: 0.9rem;
+  padding: 20px 0px;
+  width: 98%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5rem;
+  height: 120px;
+   
+}
+
+.produkt-minus-button{
+   height: 30px;
+   border: 0;
+   border-radius: 20px 0px 0px 20px;
+   width: 40px;
+   background-color: var(--beige);
+   font-size: 1.2rem;
+}
+
+.produkt-plus-button{
+   height: 30px;
+   border: 0;
+   border-radius: 0 20px 20px 0;
+   width: 40px;
+   background-color: var(--beige);
+   font-size: 1.2rem;
+}
+
+.produkt-button-value{
+width: 30px;
+height: 30px;
+border: 0;
+text-align: center;
+margin-bottom:0.25rem;
+}
+
+.produkt-tilfoj-knap{
+   border: 0;
+   border-radius: 20px;
+   width: 120px;
+   height: 30px;
+   margin: 0.25rem;
+   color: var(--blue);
+   background-color: var(--lightblue);
+   margin: 20px 0px;
+}
+
+.produkt-formular{
+   margin-right: 5vw;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.bestilling-overskrift{
+   font-weight: var(--medium);
+   font-size: 1.8rem;
+   margin-top: 4rem;
+   color: var(--blue);
+   font-family:'Montserrat', sans-serif;
+   margin-bottom: 2rem;
+}
+.produkt-formular-section{
+   width: 80vw;
+   background-color: var(--yellow);
+   display: grid;
+   grid-template-rows: 1fr;
+   grid-template-columns: 1fr 1fr;
+   margin: auto;
+   border-radius: 15px;
+   margin-bottom: 5rem;
+   justify-content: center;
+   align-items: center;
+
+}
+.formular-email{
+height: 40px;
+width: 40vw;
+border: 0;
+border-radius: 10px;
+margin: 0.5rem;
+padding-left: 10px;
+}
+
+.container-kagebox p{
+  text-align: center;
+}
+
+.formular-navn{
+   height: 40px;
+   width: 40vw;
+   border: 0;
+   border-radius: 10px;
+   margin: 1rem;
+   padding-left: 10px;
+}
+
+.formular-besked{
+width: 39.5vw;
+height: 20vh;
+border: 0;
+border-radius: 10px;
+padding: 10px;
+margin: 0.5rem;
+
+}
+.overskrift-udfyld{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family:'Montserrat', sans-serif;
+  color: var(--blue);
+  font-size: 1.8rem;
+  font-weight: var(--regular);
+}
+.orderList{
+ height: 380px;
+ width: 300px;
+ background-color: white;
+ border-radius: 8px;
+ margin: 2rem;
+ margin-left: 6vw;
+ margin-top: 4.5rem;
+ position: relative;  
+     
+}
+.koeb-button{
+  background-color: #2D65B6;
+  font-weight: var(--medium);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; 
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+.koeb-liste{
+   color: var(--offblack);
+   margin-top: 1rem;
+   list-style-type: none;
+   font-weight: var(--light);
+   font-size: 1.2rem;
+   border: 0;
+}
+
+
+
+.removeButton{
+ border: 0;
+ background-color: white;
+ width: 50px;
+ color: darkred;
+ opacity: 60%;
+}
+
+
+
+.total-pris {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   padding: 10px;
+   border: 0;
+   color: var(--offblack);
+   
+}
+.total-pris::placeholder{
+   color: black;
+   font-size: 1rem;
+}
+/* style af catering */
+
+.gul-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gul-box {
+  display: flex;
+  align-items: center;
+  background-color: var(--beige);
+  height: 40rem;
+  margin: 2rem;
+  margin-top: 3rem;
+}
+
+.storkage-image {
+  width: auto;
+  height: 35rem;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  margin-left: 6vw;
+}
+
+img.gul-image{
+  width: 20%
+}
+
+.gul-text {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom:200px ;
+  font-size: 1.5rem;
+
+}
+
+h1#catering {
+  color:var(--blue);
+  font-weight: var(--medium);
+  padding-bottom: 20px;
+  margin: 0 0 30px 0;
+}
+
+
+.gul-text p {
+  color: var(--offblack);
+  font-size: 1.2rem;
+}
+
+
+.text-container {
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 30px;
+  margin-top: 10px;
+}
+
+.text-container p {
+  line-height: 1.4; 
+  margin-bottom: 10px; 
+}
+
+.skriv-button {
+  background-color:var(--blue);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; 
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.catering-button{
+  margin:0 auto; 
+  background-color: var(--blue);
+  color: white;
+  padding: 0 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; 
+  text-align: center;
+  display: block;
+  grid-column: span 2; 
+  margin-bottom: 2rem;
+ 
+
+}
+
+.catering-skriv{
+  font-size: 1rem;
+  padding: 8px 30px;
+  margin-top: 2rem;
+  background-color: var(--blue);
+  color: var(--offwhite);
+  border-radius: 20px;
+}
+
+.catering-formular-section {
+  width: 80vw;
+  background-color: var(--yellow);
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 100px;
+}
+
+h2#bestil {
+  font-weight: var(--medium);
+  padding: 30px;
+  font-size: 2rem;
+  margin-top: 8rem;
+}
+
+
+.extra-tekst{
+  font-weight: var(--light);
+  font-size: 1rem;
+  text-align: start;
+  color: gray;
+}
+.formular-section {
+  background-color: var(--lightblue);
+  padding: 20px;
+  border-radius: 10px; 
+}
+
+.formular-section h2 {
+  color:var(--blue);
+  margin-bottom: 20px; 
+    line-height: 1.2; 
+    text-align: center; 
+}
+
+.catering-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 0px 20px;
+
+  padding-left: 130px;
+  padding-top: 30px;
+  height: 36rem;
+}
+
+
+.catering-formular-email{
+  height: 40px;
+  width: 40vw;
+  border: 0;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+  
+.catering-formular-navn{
+  height: 40px;
+  width: 40vw;
+  border: 0;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+  
+.catering-formular-anledning{
+  width: 40vw;
+  height: 6vh;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+ 
+}
+textarea{
+  resize: none;
+}
+.catering-formular-kagedetaljer{
+  width: 40vw;
+  height: 10vh;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.catering-formular-kommentar{
+  width: 40vw;
+  height: 15vh;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+label {
+  margin-bottom: 20px;
+  font-weight: bold;
+  padding-top: 13px;
+  line-height: 1.2;
+}
+
+label span {
+  color: red;
+}
+
+input, textarea {
+  border: 0;
+  border-radius: 4px;
+}
+
+/* style af om gotfred */
+
+
+/* vision, mission, værdier */
+
+.vis-mis-val {
+  display: flex;
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.vmv {
+  flex: 1;
+  padding: 20px;
+  border: none;
+  margin-top: 2rem;
+  background-color: var(--lightblue);
+  margin: 1rem;
+  border-radius: 20px;
+}
+
+.vmv h2 {
+  font-family:'Montserrat', sans-serif;
+  color: var(--blue);
+  padding-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: var(--regular);
+}
+
+.vmv p {
+  font-size: 1.2rem;
+  color: var(--offblack);
+  margin: 0px 20px 0px 20px;
+  line-height: 2rem;
+}
+.vores-rejse-h2{
+  margin: 2rem;
+  margin-top: 3rem;
+}
+
+/* vores rejse */
+
+.vores-rejse-h1 {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-weight: var(--medium);
+  font-size: 2rem;
+}
+
+.vores-rejse {
+  background-color: var(--beige);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.vores-rejse img {
+  max-height: 400px;
+  margin-left: 100px;
+}
+
+.vores-rejse-content {
+  flex: 1;
+}
+
+.vores-rejse-content p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 10px 10px 10px 90px;
+  max-width: 700px;
+  color: var(--offblack);
+  text-align: left;
+  font-weight: 400;
+}
+
+/* den daglige drift */
+
+.drift-h1 {
+  font-size: 2rem;
+  font-weight: var(--medium);
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.drift-p {
+  font-size: 1.2rem;
+  display: flex;
+  color: var(--offblack);
+  line-height: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+
+
+.drift-container {
+  display: flex;
+  align-items: center;
+  background-image: url(/pictures/blue-pattern.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  width: 100vw;
+}
+
+.drift-img {
+  align-items: center;
+  display: flex;
+  padding: 40px 0px;
+}
+
+.drift-bg {
+  width: 100vw;
+}
+
+.drift-p2 {
+  padding-top: 50px;
+
+  color: var(--offblack);
+  line-height: 2rem;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  font-size: 1.2rem;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.drift2-img-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-image: url(/pictures/yellow-pattern.webp);
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin-bottom: 4rem;
+}
+
+.drift2-img-container img {
+  margin: 0 25px; 
+  width: 20.5%;
+  padding: 50px 0px;
+}
+
+.drift2-bg {
+  width: 100%;
+  padding-bottom: 100px;
+}
+.infograpic-section {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infograpic-section img {
+  max-width: 62%;
+  max-height: 62%;
+  height: auto; 
+  width: auto; 
+  transition: opacity 1.5s ease-in-out;
+}
+
+.infographic-h2 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: var(--medium);
+}
+
+.infographic-p {
+  
+  margin-top: 2rem;
+  color: var(--offblack);
+  width: 80vw;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+/* style af kontakt */
+
+.konkakt-container {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.kontakt-h2 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: var(--medium);
+}
+
+.kontact-info {
+  text-align: center;
+  margin-bottom: 40px;
+  width: auto;
+}
+
+.kontact-info h2 {
+  color: var(--blue);
+  font-weight: var(--medium);
+  margin-bottom: 20px;
+  padding: 40px;
+}
+
+.info-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  flex-direction: column;
+}
+.åbningstider-tekst{
+  line-height: 2rem;
+}
+.info-clock{
+  padding-top: 6px;
+}
+.info-item {
+  display: flex;
+
+  gap: 10px;
+  max-width: 300px;
+  flex-basis: calc(50% - 20px);
+}
+
+.info-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.info-item-column {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+
+.find-vejen-button {
+  background-color: var(--blue);
+  color: var(--offwhite);
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#kontaktos{
+  padding: 8px 30px;
+}
+.kontaktos-form {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#kontakt {
+  color: var(--blue);
+  font-weight: var(--medium);
+  margin-bottom: 20px;
+  margin-top: 5rem;
+}
+
+h3 {
+  color: var(--blue);
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.info-item i {
+  font-size: 24px;
+  color: var(--blue);
+}
+
+.info-item p {
+ color: #111111;
+}
+
+.kontaktosform-section {
+  background-color: var(--yellow);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+
+#message {
+  height: 100px;
+  border: 0;
+}
+
+#name, #email, #message {
+  border-color: white;
+}
+
+.kontaktosform-section h3 {
+  color: #3166b3;
+  margin-bottom: 20px;
+}
+
+.kontakt-os-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 1rem;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.maps-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.find-vej{
+  margin-top: 1.5rem;
+}
+
+#kontaktos {
+  background-color: #3166b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  align-self: center;
+  margin: 0;
+}
+.faq h3{
+  text-align: center;
+}
+.faq {
+ 
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.faq h2{
+  color: #3166b3;
+  font-weight: var(--medium);
+  
+}
+
+.faq-item {
+  background-color: var(--beige);
+  width: 92%;
+  margin: 0 auto;
+  padding: 10px 0px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+}
+
+.faq-item h3 {
+  font-weight: bold;
+}
+
+.faq-item p {
+  color: #333;
+}
+
+.question {
+  font-weight: bold;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.answer{
+  font-weight: 300;
+  padding-right: 1rem;
+}
+
+
+/* Footer */
+.footer {
+  background-color: var(--lightblue);
+  padding: 20px 0;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+
+}
+
+.footer .container i {
+  color: #2D65B6;
+}
+
+.footer .info {
+  display: flex;
+
+  line-height: 2;
+  
+}
+
+.footer .info i {
+  font-size: 24px;
+  margin-right: 10px;
+ color: #2D65B6;
+}
+
+.footer .info p {
+  margin: 0;
+  font-size: 16px;
+  color: #111111;
+}
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer .social-icons i {
+  color: #2D65B6;
+
+}
+
+.footer .social-icons a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.footer .social-icons img {
+  height: 1.7rem;
+}
+
+.footer .mail-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #2D65B6;
+}
+
+.footer .mail-info i {
+  font-size: 24px;
+  margin-right: 10px;
+ color: #2D65B6;
+}
+
+.footer .mail-info p {
+  margin: 0;
+  font-size: 16px;
+  color: #111111;
+}
+
+
+
+/* media query for desktop  */
+@media screen and (max-width: 1025px) {
+ 
+  #myForm{
+    grid-template-columns: 1fr 1fr;
+ 
+  }
+  .formular-email{
+   width: 30vw;
+
+    }
+    
+    .formular-navn{
+       width: 30vw;
+    }
+    
+    .formular-besked{
+    width: 30.5vw;
+    }
+    .overskrift-udfyld{
+       font-size: 1.5rem;
+    }
+}
+
+/* media query for tablet */
+@media screen and ( min-width: 768px) AND ( max-width: 1024px) {
+  .nav-logo img {
+    padding-left: 13rem;
+  } 
+  
+  h1{
+      font-size: 2rem;
+   }
+ 
+
+   #catering{
+    font-size: 1.5rem;
+   }
+   .gul-text p {
+    font-size: 1.2rem;
+  }
+  .koeb-liste{
+    font-size: 1rem;
+  }
+  #bestil{
+    font-size: 2rem;
+  }
+  .catering-form{
+    padding-left: 40px;
+  }
+  .gul-text {
+    width: 90%;
+  }
+  .storkage-image{
+    width: 400px;
+    margin-left: 4vw;
+  }
+  .forside-header {
+    height: 60vh;
+    margin-top: 0;
+  }
+  .season-text {
+    margin-top: 3rem;
+    width: 12rem;
+    height: 4.5rem;
+    font-size: 0.7rem;
+  }
+  .season-text h2 {
+    font-size: 1.5rem;
+  }
+  /* om gotfred cafe */
+  .main-forside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem;
+  }
+
+  .gotfred-forside-text {
+    width: 15rem;
+    height: 500px;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    
+  }
+  .gotfred-forside-text p {
+    text-align: left;
+  }
+  #eapps-instagram-feed-1{
+    max-width:100%;
+  }
+  .vis-mis-val {
+    justify-content: center;
+  }
+  .vmv p {
+    font-size: 1rem;
+  }
+
+ 
+  /* forside bestil */
+
+ 
+  .bestil-section h1,a {
+    margin: 2rem;
+  }
+  .bestil-section h1 {
+    color: var(--blue);
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+ 
+
+  /* forside bog */
+
+  .forside-bog {
+    margin: 3rem;
+    margin-bottom: 0;
+  }
+
+  .forside-bog-text {
+    line-height: 1.4;
+  }
+  
+
+  .forside-bog-text h2 {
+    font-size: 1.4rem;
+    padding: 0.2rem;
+  }
+  .forside-bog-text a {
+    padding: 0.7rem 1.15rem;
+    font-size: 1.2rem;
+  }
+
+  .vores-rejse-content p{
+    font-size: 12px;
+    margin-left: 20px; 
+    line-height: 20px; 
+  } 
+
+  .infograpic-section img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .konkakt-container{
+    flex-direction: column;
+  }
+  .footer .container .info {
+    display: none;
+  }
+  .footer .container .mail-info {
+    display: none;
+  }
+  .footer .container {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .container .social-icons {
+    gap: 0px;
+  }
+
+  .drift2-img-container img {
+    margin: 0px 6px; 
+    width: 23%;
+    padding: 50px 0px;
+  }
+  .gotfred-forside-picture img{
+    height: 500px;
+  }
+
+}
+
+
+
+/* media query for mobile */
+@media screen and ( min-width: 390px ) and (max-width: 767px) {
+    .nav-logo img {
+      padding-left: 1rem;
+    }
+  
+    #myForm{
+      grid-template-columns:1fr;
+    }
+    .produkt-formular-section{
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+    .orderList{
+      justify-self: center;
+     margin: 2rem;
+    }
+    .bestil-kage-banner{
+      width: 75vw;
+      margin: 0 auto;
+    }
+    .bestil-kage-banner h2{
+      font-size: 0.8rem;
+     padding-bottom: 10px;
+     font-weight: var(--medium);
+    }
+    .bestil-section a {
+      padding: 0.25rem 1.5rem;
+      font-size: 0.8rem;
+      font-weight: var(--medium);
+    }
+    #forhandlerknap{
+      margin-left: 2rem;
+    }
+    .catering-form{
+      padding-left: 0px;
+    }
+    .gul-box{
+      flex-direction: column-reverse;
+      height: auto;
+    }
+    .gul-text{
+      width: 90%;
+    }
+    .kontaktosform-section{
+      width: 90%;
+    }
+    .catering-form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+
+    }
+    .produkt-formular input{
+      width: 60%;
+    }
+    .produkt-formular textarea{
+      width: 60%;
+    }
+    .guide-tekst{
+      width: 80vw;
+    }
+    .container-kagebox{
+      gap: 0;
+    }
+    .container-kagebox div {
+      transform: scale(0.92);
+    }
+    .extra-tekst{
+      padding-bottom: 10px;
+    }
+    .catering-formular-section{
+      display: flex;
+      justify-content: center;
+      text-align: start;
+    }
+    .catering-formular-navn{
+      width: 50vw;
+    }
+    .catering-formular-email{
+      width: 50vw;
+    }
+    .catering-formular-kagedetaljer{
+      width: 50vw;
+    }
+    .catering-formular-kommentar{
+      width: 50vw;
+    }
+    .catering-formular-anledning{
+      width: 50vw;
+    }
+    .storkage-image{
+      width: 300px;
+      height: auto;
+      margin: auto;
+    }
+   
+    .vores-rejse{
+      flex-direction: column;
+      height: auto;
+    }
+    .vores-rejse img{
+      margin: auto;
+      width: 350px;
+    }
+    .vores-rejse p{
+      margin: auto;
+    }
+    .drift-img{
+      width: 85vw;
+      padding: 20px 0px
+    }
+    .vores-rejse-content{
+      width: 350px;
+    }
+    .vis-mis-val{
+      flex-direction: column;
+      width: 90vw;
+    }
+    .drift2-img-container {
+     flex-wrap: wrap;
+    }
+    .drift2-img-container img{
+      width: 30%;
+    }
+    .konkakt-container {
+      flex-direction: column;
+    }
+    .koeb-liste{
+      font-size: 1rem;
+    }
+    .maps-kontakt{
+      width: 90vw;
+    }
+    .info-details{
+      padding-left: 0;
+    }
+    .konkakt-container{
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .forside-header {
+      height: 50vh;
+      background-image: url(../pictures/saeson-mobile.webp);
+    }
+    .season-text {
+      margin-top: 1rem;
+      width: 10rem;
+      height: 3.3rem;
+    }
+    .season-text h2 {
+      font-size: 1.1rem;
+    }
+    .season-text p {
+      font-size: 0.7rem;
+      padding-right: 1.3rem;
+    }
+  /* om gotfred cafe */
+    .main-forside {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: start;
+      margin: 0;
+      margin-top: 1.2rem;
+    }
+  
+    .gotfred-forside-text {
+      width: 100%;
+      height: auto;
+      padding-top: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.3;
+      margin-bottom: 1.2rem;
+    }
+    .gotfred-forside-picture img {
+      max-width: 100%;
+      max-height: 60%;
+      width: 90%;
+      height: auto;
+      margin-bottom: 1rem;
+     
+    }
+    .gotfred-forside-picture{
+      display: flex;
+      justify-content: center;
+      
+    }
+  /* forside bestil */
+    .forside-bestil {
+      max-width: 100%;
+      
+    }
+    .bestil-section {
+      height: 4rem;
+      width: 100%;
+      text-align: center;
+      margin-top: 160px;
+    }
+    .bestil-section h1,a {
+      margin: 2rem;
+    }
+    .bestil-section h1 {
+      color: var(--blue);
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+    #drinkImage {
+      width: 100%;
+      transition: opacity 0.5s ease-in-out;
+      opacity: 1;
+    }
+    .infograpic-section img{
+      max-height: 100%;
+      max-width: 100%;
+    }
+    /* forside bog */
+  
+    .forside-bog {
+      margin-bottom: 3rem;
+      flex-direction: column-reverse;
+    }
+  .forside-bog img{
+   align-self: center;
+   width: 100%;
+   height: auto;
+  }
+    .forside-bog-text {
+    
+      width: 100%;
+      line-height: 1.4;
+      padding: 1rem;
+    }
+    
+    .forside-bog-text p {
+      font-size: 0.9rem;
+    }
+    .forside-bog-text h2 {
+      font-size: 1.4rem;
+      padding: 0.2rem;
+    }
+    .forside-bog-text a {
+      padding: 0.7rem 1.15rem;
+      font-size: 1.2rem;
+      
+    }
+
+    .forside-drikke h2{
+      font-size: 1.5rem;
+    }
+
+    .footer .container .info {
+      display: none;
+    }
+    .footer .container .mail-info {
+      display: none;
+    }
+    .footer .container {
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    .footer .social-icons {
+      gap: 0px;
+    }
+    .kontakt-h2 {
+      font-size: 1.9rem;
+    }
+    
+    .catering-button{
+      margin-top: 1rem;
+      padding: 8px 20px;
+    }
+    #forhandlerknap {
+      font-size: 0.7rem;
+      margin: 4.7rem;
+      padding: 0.5rem;
+    }
+    
+}
+
+/*=============== NAV ===============*/
+.container {
+  max-width: 1400px;
+  margin-inline: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  
+}
+
+.nav-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--lightblue);
+  z-index: 3;
+ 
+}
+
+.nav-link {
+  color: var(--offblack);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  height: 3.5rem;
+}
+
+.nav-burger, 
+.nav-close {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  inset: 0;
+  margin: auto;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: opacity .1s, transform .4s;
+  color: var(--blue);
+}
+
+.nav-logo-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.nav-logo img {
+  height: 3rem;
+}
+
+.nav-toggle {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.nav-close {
+  opacity: 0;
+}
+
+/* For store skærme */
+@media screen and (min-width: 1025px) {
+    .container {
+      margin-inline: auto;
+    }
+  
+    .nav {
+      height: 5.5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    .nav-list {
+      height: 100%;
+      display: flex;
+      column-gap: 4.5rem;
+      margin-right: 2rem;
+      
+    }
+    .nav-link {
+      height: 100%;
+      padding: 0;
+      justify-content: initial;
+      column-gap: .25rem;
+    }
+
+    .nav-list a:hover {
+      color: var(--blue);
+    }
+}
+
+  /* Nav for mobil */
+@media screen and (max-width: 1024px) {
+  .nav-menu {
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    transition: top .4s, opacity .3s;
+  }
+  .nav-list {
+    background-color: var(--lightblue);
+    padding-top: 1rem;
+  }
+  .nav-logo img {
+    height: 2.5rem;
+  }
+}
+
+/* Css til at vise menu. Se javascript */
+.show-menu {
+  opacity: 1;
+  top: 3.5rem;
+  pointer-events: initial;
+}
+
+/* css til at vise ikoner. Se javascript */
+.show-icon .nav-burger {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.show-icon .nav-close {
+  opacity: 1;
+  transform: rotate(90deg);
+}

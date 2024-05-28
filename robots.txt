@@ -1,0 +1,3 @@
+sitemap: http://gotfred.runegstudio.dk/sitemap.xml
+User-agent: *
+allow: /

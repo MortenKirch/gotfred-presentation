@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering</title>
+    <meta name="title" content="Gotfred Aarhus">
+    <meta name="description" content="Gotfred er et patisserie i midten af Aarhus, tæt på Dokken. Vi laver hjemmelavet sæsompræget konditori kager af højeste kvalitet.">
+    <meta name="keywords" content="patisserie, konditori, bager, café, catering, gotfred, desserter, bageri, portionskager">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="DK-82" />
+    <meta name="geo.placename" content="Aarhus" />
+    <meta name="geo.position" content="56.154937;10.212208" />
+    <meta name="ICBM" content="56.154937, 10.212208" />
+
+
+    
+    <link rel="icon" href="/pictures/logo/favicon.png" type="image/png">
+
+
+    <!-- external references -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="module" src="/javascript/nav.js"></script>
+    
+</head>
+<body>
+
+    
+    <header class="nav-header">
+        <nav class="nav container">
+            <div class="nav-logo-container">
+              <a href="/index.html" class="nav-logo">
+                  <img src="/pictures/logo/gotfred-logo.webp" alt="gotfred logo blå">
+              </a>
+              
+              <div class="nav-toggle" id="nav-toggle">
+                <i class="fa-solid fa-xmark nav-close"></i> 
+                <i class="fa-solid fa-bars nav-burger"></i>
+              </div>
+            </div>
+  
+            <!--=============== NAV MENU ===============-->
+            <div class="nav-menu" id="nav-menu">
+              <ul class="nav-list">
+                  <li><a href="kager-og-bestilling.html" class="nav-link">kager & bestilling</a></li>
+                  <li><a href="catering.html" class="nav-link">catering</a></li>
+                  <li><a href="om-gotfred.html" class="nav-link">om gotfred</a></li>
+                  <li><a href="kontakt.html" class="nav-link">kontakt os</a></li>
+              </ul>
+            </div>
+        </nav>
+      </header>
+ 
+
+    <div class="catering-container">
+        <div class="gul-box">
+            <img id="catering-image" src="/pictures/bryllupskage.jpg" alt="billede af catering kager" class="storkage-image">
+            <div class="gul-text  text-container">
+                <h1 id="catering">CATERING</h1>
+                <p>Gør dit næste event lidt sødere med Gotfred Patisserie.
+                    Vi tilbyder skræddersyede kageoplevelser til enhver anledning, intime fødselsdage, storslåede fester og firma arangementer. <br>
+                    <br>Vores team hjælper dig med at skabe lækre og smukke kager, der passer perfekt til lejligheden.
+                    Skriv til os og få planlagt de lækre detaljer til dit event.
+                </p>
+                <a href="#catering-kontakt" class="catering-skriv">SKRIV TIL OS</a>
+            </div>
+        </div>
+
+        <h2 id="bestil" >BESTIL CATERING HOS GOTFRED</h2>
+      <section class="catering-formular-section">
+         
+           
+            <form class="catering-form" id="catering-kontakt" method="POST" action="https://formspree.io/f/mdoqvgoa">
+                <label for="name">Navn <span>*</span></label>
+                <input type="text" id="name" name="Navn" placeholder="Navn her..." class="catering-formular-navn" required>
+                
+                <label for="email">Email <span>*</span></label>
+                <input type="email" id="email" name="Email" placeholder="Email her..." class="catering-formular-email" required>
+                
+                <label for="occasion">Anledning og antal kuverter <span>*</span></label>
+                <textarea type="text" id="occasion" name="anledning og antal kuverter" placeholder="Skriv her..." class="catering-formular-anledning" required></textarea>
+                
+                <label for="cake-details">Kagedetaljer <span>*</span><p class="extra-tekst">fx. Skrift, farver, kagetype osv.</p></label>
+                <textarea type="text" id="cake-details" name="kage detaljer" placeholder="Skriv her..." class="catering-formular-kagedetaljer" required></textarea>
+                
+                <label for="comments">Kommentar/bemærkninger <p class="extra-tekst">fx. allergener</p>
+                </label>
+                <textarea id="comments" name="extra kommentarer" placeholder="Skriv her..." class="catering-formular-kommentar" ></textarea>
+                
+                <button class="catering-button" type="submit">SEND</button>
+            </form>
+
+      </section>  
+      
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.google.com/maps/place/Havnegade+24,+8000+Aarhus/@56.1549399,10.2095572,16z/data=!3m1!4b1!4m6!3m5!1s0x464c3f90eb1d349b:0x7fe31394f6f603ec!8m2!3d56.1549369!4d10.2121321!16s%2Fg%2F11bw40cz5g?entry=ttu" target="_blank"><i class="fas fa-map-marker-alt" aria-label="maps ikon"></i></a>
+                <a href="https://www.facebook.com/p/Gotfred-Aarhus-100083096210390/" target="_blank"><i class="fa-brands fa-square-facebook" aria-label="facebook ikon"></i></a>
+                <a href="https://www.instagram.com/gotfred.aarhus" target="_blank"><i class="fab fa-instagram" aria-label="instagram ikon"></i></a>
+                <a href="https://www.findsmiley.dk/1221267" target="_blank"><img src="/pictures/ikoner/sm1as.png" alt="fødevarestyrelsen smiley"></a>
+            </div>
+    
+            <div class="info">
+       
+                <p class="åbningstider-tekst">Tirsdag - Fredag 12:30 - 17:30<br>Lørdag - Søndag 11:30 - 17:30</p>
+            </div>
+            
+            <div class="mail-info">
+                <a href="mailto:gotfred.aarhus@outlook.dk"><i class="fa-regular fa-envelope" aria-label="Mail ikon"></i></a>
+                <p>Skriv til os</p>
+            </div>
+            
+        </div>
+      </footer>
+    </body>
+    </html>
+      <script src="/javascript/image-swap-catering.js"></script>
+</body>
+
+</html>
