@@ -287,7 +287,10 @@ function formSubmit(event) {
         alert("Vælg venligst mindst 4 kager.");
     } else if (totalQuantity > 20) {
         alert("Du kan maksimalt vælge 20 kager.");
-    } 
+    }
+    else {
+        form.submit()
+    }
 }
 
 // laver en eventlistener til at kalde formSubmit
