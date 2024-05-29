@@ -1,0 +1,149 @@
+{
+    "kager":[
+      { "navn": "BANOFFEE",
+        "billede": "/pictures/produkter/banoffee.webp",
+        "beskrivelse": "Friskskårne bananer, passionsfrugt, flødeskum, hjemmelavet saltmælkssyltetøj og bastogne",
+        "ikoner": [{
+          "url" :"/pictures/ikoner/egg.png",
+          "navn": "æg"
+        },
+        {
+          "url" :"/pictures/ikoner/gluten-uden.png",
+          "navn": "ikke gluten"
+        },
+        {
+          "url" :"/pictures/ikoner/laktose-med.png",
+          "navn": "laktose"
+        },
+        {
+          "url" :"/pictures/ikoner/noedder-med.png",
+          "navn": "nødder"
+        }
+      
+      ]
+
+      },
+      {
+        "navn": "GAMMELDAGS ÆBLEKAGE",
+        "billede": "/pictures/produkter/aeble-kage.webp",
+        "beskrivelse": "hjemmelavet sej dansk makron, en fløjlsblød saltet karamel, syrlig æblekompot og en helt igennem fantastisk creme fraiche-mousse",
+        "ikoner": [{
+          "url" :"/pictures/ikoner/egg.png",
+          "navn": "æg"
+        },
+        {
+          "url" :"/pictures/ikoner/gluten-uden.png",
+          "navn": "gluten"
+        },
+        {
+          "url" :"/pictures/ikoner/laktose-med.png",
+          "navn": "laktose"
+        },
+        {
+          "url" :"/pictures/ikoner/noedder-med.png",
+          "navn": "nødder"
+        }
+      
+      ]
+
+      },
+      {
+        "navn": "HINDBÆRTÆRTE",
+        "billede": "/pictures/produkter/hindbaer-taerte.webp",
+        "beskrivelse": "sprød tærtebund, mandelfrangipane, skarp hindbærkompot og en fløjlsblød chokoladehindbærmousse",
+        "ikoner": [{
+          "url" :"/pictures/ikoner/egg.png",
+          "navn": "æg"
+        },
+        {
+          "url" :"/pictures/ikoner/gluten-uden.png",
+          "navn": "gluten"
+        },
+        {
+          "url" :"/pictures/ikoner/laktose-med.png",
+          "navn": "laktose"
+        },
+        {
+          "url" :"/pictures/ikoner/noedder-med.png",
+          "navn": "nødder"
+        }
+      
+      ]
+
+      },
+      {
+        "navn": "JORDBÆR TÆRTE",
+        "billede": "/pictures/produkter/jordbaer-taerte.webp",
+        "beskrivelse": "mazarinbund med chokolade ganache, blød vanilije creme og en lækker jordbær kompot, toppet med glaseret jordbær",
+        "ikoner": [{
+          "url" :"/pictures/ikoner/egg.png",
+          "navn": "æg"
+        },
+        {
+          "url" :"/pictures/ikoner/gluten-uden.png",
+          "navn": "gluten"
+        },
+        {
+          "url" :"/pictures/ikoner/laktose-med.png",
+          "navn": "laktose"
+        },
+        {
+          "url" :"/pictures/ikoner/noedder-med.png",
+          "navn": "nødder"
+        }
+      
+      ]
+
+      },
+      {
+        "navn": "PEACH MELBA",
+        "billede": "/pictures/produkter/peach-melba.webp",
+        "beskrivelse": "mandelfrangipanebund, syrlig hindbær-marmelade og ferskenkompot gemt midt i en cremefraiche-vaniljemousse",
+        "ikoner": [{
+          "url" :"/pictures/ikoner/egg.png",
+          "navn": "æg"
+        },
+        {
+          "url" :"/pictures/ikoner/gluten-uden.png",
+          "navn": "gluten"
+        },
+        {
+          "url" :"/pictures/ikoner/laktose-med.png",
+          "navn": "laktose"
+        },
+        {
+          "url" :"/pictures/ikoner/noedder-med.png",
+          "navn": "nødder"
+        }
+      
+      ]
+
+      },
+      {
+        "navn": "YUZU TÆRTE",
+        "billede": "/pictures/produkter/yuzu-taerte.webp",
+        "beskrivelse": "en sprød tærtebund, birkesvamp, syrlig lemon curd, blød yuzu-fromage og en fluffy og sød marengs",
+        "ikoner": [{
+          "url" :"/pictures/ikoner/egg.png",
+          "navn": "æg"
+        },
+        {
+          "url" :"/pictures/ikoner/gluten-uden.png",
+          "navn": "gluten"
+        },
+        {
+          "url" :"/pictures/ikoner/laktose-med.png",
+          "navn": "laktose"
+        },
+        {
+          "url" :"/pictures/ikoner/noedder-med.png",
+          "navn": "nødder"
+        }
+      
+      ]
+
+      }
+   
+    ]
+  }
+  
