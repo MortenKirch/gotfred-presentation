@@ -529,16 +529,18 @@ margin: 0.5rem;
    margin-top: 1rem;
    list-style-type: none;
    font-weight: var(--light);
-   font-size: 1.2rem;
+   font-size: 1rem;
    border: 0;
+   text-transform: lowercase;
 }
+
 
 
 
 .removeButton{
  border: 0;
  background-color: white;
- width: 50px;
+ width: 60px;
  color: darkred;
  opacity: 60%;
 }
