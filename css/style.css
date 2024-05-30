@@ -1475,6 +1475,9 @@ align-items: center;
       grid-template-columns: 1fr;
       justify-content: center;
     }
+    .product-icon-tooltip .tooltiptext{
+      width: 150px;
+    }
     .orderList{
       justify-self: center;
      margin: 2rem;
