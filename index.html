@@ -21,8 +21,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="/javascript/image-swap-forside.js"></script>
-    <script type="module" src="/javascript/nav.js"></script>
+    <script type="module" src="/javascript/image-swap-forside.js" defer></script>
+    <script type="module" src="/javascript/image-swap-forside-cafe.js" defer></script>
+    <script type="module" src="/javascript/nav.js" defer></script>
 </head>
 <body>
 
@@ -40,14 +41,14 @@
               <i class="fa-solid fa-bars nav-burger"></i>
             </div>
           </div>
-
+          
           <!--=============== NAV MENU ===============-->
           <div class="nav-menu" id="nav-menu">
             <ul class="nav-list">
-                <li><a href="pages/kager-og-bestilling.html" class="nav-link">kager & bestilling</a></li>
-                <li><a href="pages/catering.html" class="nav-link">catering</a></li>
-                <li><a href="pages/om-gotfred.html" class="nav-link">om gotfred</a></li>
-                <li><a href="pages/kontakt.html" class="nav-link">kontakt os</a></li>
+                <li class="nav-line-hover"><a href="pages/kager-og-bestilling.html" class="nav-link">kager & bestilling</a></li>
+                <li class="nav-line-hover"><a href="pages/catering.html" class="nav-link">catering</a></li>
+                <li class="nav-line-hover"><a href="pages/om-gotfred.html" class="nav-link">om gotfred</a></li>
+                <li class="nav-line-hover"><a href="pages/kontakt.html" class="nav-link">kontakt os</a></li>
             </ul>
           </div>
       </nav>
@@ -62,17 +63,16 @@
         </div>
       </section>
 
-      <main class="main-forside">
-        <div class="gotfred-forside-picture">
-          <img src="pictures/gotfred-cafe.webp" alt="billede af gotfreds cafe">
+        <div class="gotfred-cafe">
+            <img id="gotfred-cafe-image" src="pictures/cafe-1.webp" alt="billeder af gotfred cafe" class="gotfred-storbillede">
+            <div class="gotfred-text gotfred-text-container">
+                <h1 id="gotfred-cafe-h1">GOTFRED CAFE</h1>
+                <p>
+                  Vi tilbyder smukke og velsmagende konditori portionskager inspireret af nordiske traditioner samt fransk patisserie.<br/><br/>Vores kager er perfekte til eftermiddagskaffen, og vi lægger vægt på omhu og brug af de bedste ingredienser for at sikre en uforglemmelig smagsoplevelse.
+                </p>
+            </div>
         </div>
-        <div class="gotfred-forside-text">
-          <p>
-            Vi tilbyder smukke og velsmagende konditori portionskager inspireret af nordiske traditioner samt fransk patisserie.<br/><br/>Vores kager er perfekte til eftermiddagskaffen, og vi lægger vægt på omhu og brug af de bedste ingredienser for at sikre en uforglemmelig smagsoplevelse.
-          </p>
-        </div>
-      </main>
-
+      
       <!-- Forside bestil banner -->
 
       <section class="forside-bestil">
@@ -90,26 +90,11 @@
       <section class="forside-drikke">
         <div class="slide-container" id="drinkSlide">
           <h2 id="drinkType"></h2>
-          <img id="drinkImage" src="/pictures/forside-slider-1.webp" alt="billeder af kaffe og saft fra gotfreds leverandører">
+          <img id="drinkImage" src="/pictures/forside-slider-1.webp" loading="lazy" alt="billeder af kaffe og saft fra gotfreds leverandører">
         </div>
       </section>
 
-      <section class="forside-bog">
-        
-          <img src="pictures/forside-bog.png" alt="billede af Patisserie gotfred bogen" class="forside-bog-img">
-        
-        <div class="forside-bog-text">
-          <p>
-            <h2>Nordisk Patisserie</h2>
-            <p>Dyk ned i verdenen af nordisk patisserie med vores bog, "Nordisk Patisserie", hvor vi, 
-              Sonia Pedersen og Sofie Jakobsen, deler vores passion for kager. 
-              Lær grundelementerne i petitkager, fra mørdejsbunde til frugtindlæg og cremede mousser. 
-              Uanset om du vil bage dem selv eller give bogen som en gave, er bogen en essentiel guide 
-              for enhver, der ønsker at mestre kunsten at skabe smukke, velsmagende kager. <br><br>
-              <a class="forhandlerknap" id="forhandlerknap"  href="https://www.saxo.com/dk/nordisk-patisserie_bog_9788740686869">Se forhandlere</a>
-          </p>
-        </div>
-      </section>
+      
 <!-- start af instagram -->
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <div class="elfsight-app-af66cb23-5cee-49b0-b114-89f63b57f628" data-elfsight-app-lazy></div>
@@ -125,12 +110,12 @@
 
         <div class="info">
             
-            <p class="åbningstider-tekst">Tirsdag - Fredag 12:30 - 17:30<br>Lørdag - Søndag 11:30 - 17:30</p>
+            <p class="åbningstider-tekst">Tirsdag - Fredag 12:30 - 17:30 &nbsp;|&nbsp; Lørdag - Søndag 11:30 - 17:30</p>
         </div>
         
         <div class="mail-info">
-            <a href="mailto:gotfred.aarhus@outlook.dk"><i class="fa-regular fa-envelope" aria-label="Mail ikon"></i></a>
-            <p>Skriv til os</p>
+            <a href="mailto:gotfred.aarhus@outlook.dk"><i class="fa-regular fa-envelope" aria-label="Mail ikon"></i></a>    
+            <a href="mailto:gotfred.aarhus@outlook.dk">Skriv til os</a>
         </div>
         
     </div>

@@ -47,10 +47,10 @@
             <!--=============== NAV MENU ===============-->
             <div class="nav-menu" id="nav-menu">
               <ul class="nav-list">
-                  <li><a href="kager-og-bestilling.html" class="nav-link">kager & bestilling</a></li>
-                  <li><a href="catering.html" class="nav-link">catering</a></li>
-                  <li><a href="om-gotfred.html" class="nav-link">om gotfred</a></li>
-                  <li><a href="kontakt.html" class="nav-link">kontakt os</a></li>
+                  <li class="nav-line-hover"><a href="kager-og-bestilling.html" class="nav-link">kager & bestilling</a></li>
+                  <li class="nav-line-hover"><a href="catering.html" class="nav-link">catering</a></li>
+                  <li class="nav-onboarding"><a href="om-gotfred.html" class="nav-link">om gotfred</a></li>
+                  <li class="nav-line-hover"><a href="kontakt.html" class="nav-link">kontakt os</a></li>
               </ul>
             </div>
         </nav>
@@ -109,7 +109,7 @@
     
 
     <div class="drift-container">
-        <img class="drift-img" src="/pictures/drift.webp" alt="gotfred café">
+        <img class="drift-img" src="/pictures/drift.webp" loading="lazy" alt="gotfred café">
        
     </div>
    
@@ -147,6 +147,23 @@
             <img src="/pictures/infographic/ig-aeblekage.webp" alt="billede af infograpic" id="image-swap-om-os">
     </section>
 
+    <section class="forside-bog">
+        
+        <img src="../pictures/forside-bog.png" alt="billede af Patisserie gotfred bogen" loading="lazy" class="forside-bog-img">
+      
+      <div class="forside-bog-text">
+        <p>
+          <h2>Nordisk Patisserie</h2>
+          <p>Dyk ned i verdenen af nordisk patisserie med vores bog, "Nordisk Patisserie", hvor vi, 
+            Sonia Pedersen og Sofie Jakobsen, deler vores passion for kager. 
+            Lær grundelementerne i petitkager, fra mørdejsbunde til frugtindlæg og cremede mousser. 
+            Uanset om du vil bage dem selv eller give bogen som en gave, er bogen en essentiel guide 
+            for enhver, der ønsker at mestre kunsten at skabe smukke, velsmagende kager. <br><br>
+            <a class="forhandlerknap" id="forhandlerknap"  href="https://www.saxo.com/dk/nordisk-patisserie_bog_9788740686869">Se forhandlere</a>
+        </p>
+      </div>
+    </section>
+
 
 
     <footer class="footer">
@@ -170,6 +187,6 @@
         </div>
       </footer>
 
-      <script src="/javascript/image-swap-om-os.js"></script>
+      <script src="/javascript/image-swap-om-os.js" defer></script>
     </body>
     </html>
