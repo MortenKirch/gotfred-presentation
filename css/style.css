@@ -361,9 +361,14 @@ margin-bottom: 2rem;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  overflow: hidden;
+  z-index: 10;
+ 
 }
-
+.product-image-container{
+  overflow: hidden;
+  max-width: 299px;
+  border-radius: 15px 15px 0px 0px;
+}
 .produkt-billede{
 max-width: 300px;
 height: auto;
@@ -377,10 +382,54 @@ height: auto;
 }
 
 .produkt-ikoner img{
-width: 18%;
+width: 85%;
 height: auto;
-margin: 0 4px;
+
 }
+
+/* Tooltip container */
+.product-icon-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.product-icon-tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the icon */
+  left: 50%;
+  margin-left: -100px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+  
+}
+
+/* Tooltip arrow */
+.product-icon-tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when hovering */
+.product-icon-tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 .produkt-p{
   font-family:'Montserrat', sans-serif;
