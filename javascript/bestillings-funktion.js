@@ -102,7 +102,7 @@ fetch(url)
             const addButton = document.createElement("button");
             addButton.type = "button";
             addButton.classList.add("tilfojButton", "produkt-tilfoj-knap");
-            addButton.textContent = "TILFØJ";
+            addButton.textContent = "Læg i kurv";
             // starter 2 funktioner, displayValue og UpdateTotalQuantity
             addButton.onclick = function() {
                 displayValue(this.parentNode.querySelector(".output"), this);
@@ -189,7 +189,7 @@ function displayValue(outputField, addButton) {
         // ændre farven på tilføg knappen og ændre teksten til tilføjet
         addButton.style.backgroundColor = "#2D65B6";
         addButton.style.color = "#FFFFFF";
-        addButton.textContent = "TILFØJET";
+        addButton.textContent = "I kurven";
 
         // opdatere den totale mængde af kager
         updateTotalQuantity();
@@ -201,7 +201,7 @@ function displayValue(outputField, addButton) {
         function resetAddButton() {
             addButton.style.backgroundColor = "#E7F1FF";
             addButton.style.color = "#000000";
-            addButton.textContent = "TILFØJ";
+            addButton.textContent = "Læg i kurven";
         }
 
     } else {

@@ -2,7 +2,7 @@
 // DOMContentLoaded, sørger for at den loader content på siden først
 document.addEventListener("DOMContentLoaded", function() {
 //    forskellige billede sources i et array,
-    let images = ["/pictures/bryllupskage.jpg", "/pictures/billede-catering-2.png", "/pictures/billede-catering-3.png"];
+    let images = ["/pictures/bryllupskage.jpg", "/pictures/billede-catering-4.webp", "/pictures/billede-catering-5.webp",  "/pictures/billede-catering-3.png","/pictures/billede-catering-6.webp", "/pictures/billede-catering-7.webp"];
     let currentIndex = 0;
     let currentImage = document.getElementById('catering-image');
 
