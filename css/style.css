@@ -21,7 +21,10 @@
 }
 body{
   overflow-x: hidden;
-  scroll-behavior: smooth; 
+  
+}
+html {
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -182,11 +185,12 @@ h2{
 .bestil-section a {
   background-color: var(--blue);
   margin: 0 auto;
-  padding: 0.45rem 2rem;
+  padding: 1rem 3rem;
   color: var(--offwhite);
   border-radius: 50px;
   font-weight: 400;
-  margin-top: 2rem;
+  font-size: 1.3rem;
+  
  
 }
 .bestil-section{
@@ -274,8 +278,9 @@ h2{
  
     background-color:var(--blue);
     color: white;
-    padding: 10px 20px;
+    padding: 8px 20px;
     border-radius: 20px; 
+    font-size: 0.8rem;
 }
 
 #eapps-instagram-feed-1{
@@ -301,53 +306,9 @@ h2{
   font-size: 1.2rem;
 }
 
-.container-kagebox{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  gap: 50px;
-  margin-bottom: 2rem;
-}
 
-.container-kagebox p {
-  color: var(--offblack);
-  font-style: italic;
-}
 
-.container-beige-4{
-width: 150px;
-height: 150px;
-background-color: var(--beige);
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 10px;
-padding: 15px;
-margin-bottom: 15px;
-}
 
-.container-blue-round{
-  width: 50px;
-  height: 50px;
-  border-radius: 40px;
-  background-color: var(--blue);
-}
-.container-beige-6{
-  width: 225px;
-  height: 150px;
-  background-color: var(--beige);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 15px;
- 
-}
 
 .forudbestil-kager-h2 {
   font-family:'Montserrat', sans-serif;
@@ -548,9 +509,6 @@ margin: 0.5rem;
 padding-left: 10px;
 }
 
-.container-kagebox p{
-  text-align: center;
-}
 
 .formular-navn{
    height: 40px;
@@ -732,8 +690,8 @@ h1#catering {
 }
 
 .catering-skriv{
-  font-size: 1rem;
-  padding: 8px 30px;
+  font-size: 0.8rem;
+  padding: 8px 20px;
   margin-top: 2rem;
   background-color: var(--blue);
   color: var(--offwhite);
@@ -1100,9 +1058,11 @@ input, textarea {
 .find-vejen-button {
   background-color: var(--blue);
   color: var(--offwhite);
-  padding: 10px 20px;
+  padding: 8px 20px;
   border-radius: 20px;
+  font-size: 0.8rem;
   text-decoration: none;
+  font-weight: var(--medium);
 }
 #kontaktos{
   padding: 8px 30px;
@@ -1543,12 +1503,6 @@ align-items: center;
     }
     .guide-tekst{
       width: 80vw;
-    }
-    .container-kagebox{
-      gap: 0;
-    }
-    .container-kagebox div {
-      transform: scale(0.92);
     }
     .extra-tekst{
       padding-bottom: 10px;
