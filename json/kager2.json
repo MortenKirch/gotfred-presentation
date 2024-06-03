@@ -26,7 +26,7 @@
       {
         "navn": "GAMMELDAGS ÆBLEKAGE",
         "billede": "/pictures/produkter/aeble-kage.webp",
-        "beskrivelse": "hjemmelavet sej dansk makron, en fløjlsblød saltet karamel, syrlig æblekompot og en helt igennem fantastisk creme fraiche-mousse",
+        "beskrivelse": "Hjemmelavet sej dansk makron, en fløjlsblød saltet karamel, syrlig æblekompot og en helt igennem fantastisk creme fraiche-mousse",
         "ikoner": [{
           "url" :"/pictures/ikoner/egg.png",
           "navn": "æg"
@@ -50,7 +50,7 @@
       {
         "navn": "HINDBÆRTÆRTE",
         "billede": "/pictures/produkter/hindbaer-taerte.webp",
-        "beskrivelse": "sprød tærtebund, mandelfrangipane, skarp hindbærkompot og en fløjlsblød chokoladehindbærmousse",
+        "beskrivelse": "Sprød tærtebund, mandelfrangipane, skarp hindbærkompot og en fløjlsblød chokoladehindbærmousse",
         "ikoner": [{
           "url" :"/pictures/ikoner/egg.png",
           "navn": "æg"
@@ -72,9 +72,9 @@
 
       },
       {
-        "navn": "JORDBÆR TÆRTE",
+        "navn": "JORDBÆRTÆRTE",
         "billede": "/pictures/produkter/jordbaer-taerte.webp",
-        "beskrivelse": "mazarinbund med chokolade ganache, blød vanilije creme og en lækker jordbær kompot, toppet med glaseret jordbær",
+        "beskrivelse": "Mazarinbund med chokolade ganache, blød vanilije creme og en lækker jordbær kompot, toppet med glaseret jordbær",
         "ikoner": [{
           "url" :"/pictures/ikoner/egg.png",
           "navn": "æg"
@@ -98,7 +98,7 @@
       {
         "navn": "PEACH MELBA",
         "billede": "/pictures/produkter/peach-melba.webp",
-        "beskrivelse": "mandelfrangipanebund, syrlig hindbær-marmelade og ferskenkompot gemt midt i en cremefraiche-vaniljemousse",
+        "beskrivelse": "Mandelfrangipanebund, syrlig hindbær-marmelade og ferskenkompot gemt midt i en cremefraiche-vaniljemousse",
         "ikoner": [{
           "url" :"/pictures/ikoner/egg.png",
           "navn": "æg"
@@ -120,9 +120,9 @@
 
       },
       {
-        "navn": "YUZU TÆRTE",
+        "navn": "YUZUTÆRTE",
         "billede": "/pictures/produkter/yuzu-taerte.webp",
-        "beskrivelse": "en sprød tærtebund, birkesvamp, syrlig lemon curd, blød yuzu-fromage og en fluffy og sød marengs",
+        "beskrivelse": "En sprød tærtebund, birkesvamp, syrlig lemon curd, blød yuzu-fromage og en fluffy og sød marengs",
         "ikoner": [{
           "url" :"/pictures/ikoner/egg.png",
           "navn": "æg"

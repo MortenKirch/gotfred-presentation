@@ -72,7 +72,7 @@ function createIcons(icons) {
 
         const tooltipText = document.createElement("span");
         tooltipText.classList.add("tooltiptext");
-        tooltipText.textContent = `denne kage indeholder ${icon.navn}`;
+        tooltipText.textContent = `Denne kage indeholder ${icon.navn}`;
 
         iconContainer.appendChild(iconElement);
         iconContainer.appendChild(tooltipText);

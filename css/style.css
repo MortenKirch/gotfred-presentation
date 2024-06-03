@@ -791,7 +791,7 @@ textarea{
 }
 
 label {
-  margin-bottom: 20px;
+
   font-weight: bold;
   padding-top: 13px;
   line-height: 1.2;
@@ -1343,9 +1343,18 @@ align-items: center;
   .storkage-image{
     width: 400px;
     margin-left: 4vw;
+    height: auto;
+
   }
- 
-  
+ .gul-box{
+  height: auto;
+ }
+ .gul-text p{
+  font-size: 1rem;
+ }
+ h1#catering{
+  padding-bottom: 0;
+ }
   .forside-header {
     height: 80vh;
     background-image: url(../pictures/saeson-mobile.webp);
@@ -1367,7 +1376,11 @@ align-items: center;
     max-width:100%;
   }
   .vis-mis-val {
-    justify-content: center;
+    width: auto;
+   
+  }
+  .vmv{
+    padding: 10px;
   }
   .vmv p {
     font-size: 1rem;
@@ -1391,7 +1404,7 @@ align-items: center;
 
   .forside-bog {
     margin: 3rem;
-    margin-bottom: 0;
+ 
   }
 
   .forside-bog-text {
@@ -1409,11 +1422,14 @@ align-items: center;
   }
 
   .vores-rejse-content p{
-    font-size: 12px;
+    font-size: 0.9rem;
     margin-left: 20px; 
     line-height: 20px; 
   } 
 
+  .vores-rejse img{
+    margin-left: 50px;
+  }
   .infograpic-section img {
     max-width: 100%;
     max-height: 100%;
@@ -1469,6 +1485,11 @@ align-items: center;
     .produkt-formular-section{
       grid-template-columns: 1fr;
       justify-content: center;
+      width: 85%;
+  
+    }
+    .produkt-formular{
+      margin-right: 0;
     }
     .product-icon-tooltip .tooltiptext{
       width: 150px;
@@ -1481,13 +1502,14 @@ align-items: center;
       width: 75vw;
       margin: 0 auto;
     }
+
     .bestil-kage-banner h2{
       font-size: 0.8rem;
      padding-bottom: 10px;
      font-weight: var(--medium);
     }
     .bestil-section a {
-      padding: 0.25rem 1.5rem;
+     
       font-size: 0.8rem;
       font-weight: var(--medium);
     }
@@ -1502,6 +1524,7 @@ align-items: center;
       width: 300px;
       height: auto;
       margin: auto;
+      margin-bottom: 2rem;
     }
 
     .catering-form{
@@ -1526,16 +1549,27 @@ align-items: center;
 
     }
     .produkt-formular input{
-      width: 60%;
+      width: 70%;
     }
     .produkt-formular textarea{
-      width: 60%;
+      width: 70%;
+    }
+    .koeb-button{
+      width: 40% !important;
     }
     .guide-tekst{
       width: 80vw;
     }
-    .extra-tekst{
-      padding-bottom: 10px;
+
+    .text-container{
+      padding: 10px;
+      
+    }
+    h1#catering{
+      padding-bottom: 0;
+    }
+    .text-container p{
+      font-size: 1rem;
     }
     .catering-formular-section{
       display: flex;
@@ -1561,8 +1595,21 @@ align-items: center;
       width: 300px;
       height: auto;
       margin: auto;
+      margin-bottom: 1.2rem;
     }
-   
+    .catering-form textarea{
+      width: 100%;
+      scrollbar-color: var(--blue);
+      
+    }
+    .catering-form label{
+      width: 100%;
+      margin-bottom: 5px;
+    }
+
+    .catering-form input{
+      width: 100%;
+    }
     .vores-rejse{
       flex-direction: column;
       height: auto;
@@ -1573,6 +1620,7 @@ align-items: center;
     }
     .vores-rejse p{
       margin: auto;
+      font-size: 1rem;
     }
     .drift-img{
       width: 85vw;
@@ -1585,11 +1633,25 @@ align-items: center;
       flex-direction: column;
       width: 90vw;
     }
+    .vmv p{
+      font-size: 1rem;
+    }
     .drift2-img-container {
      flex-wrap: wrap;
     }
     .drift2-img-container img{
-      width: 30%;
+      width: 40%;
+      margin: 0 10px;
+    padding: 10px 0px;
+    }
+    .drift-p{
+      font-size: 1rem;
+    }
+    .drift-p2{
+      font-size: 1rem;
+    }
+    .infographic-p{
+      font-size: 1rem;
     }
     .konkakt-container {
       flex-direction: column;
@@ -1621,16 +1683,29 @@ align-items: center;
       font-size: 1.1rem;
     }
     .season-text p {
-      font-size: 0.7rem;
+      font-size: 0.6rem;
       padding-right: 1.3rem;
+      
     }
-
+    .gotfred-text{
+      padding-bottom: 50px;
+      width: auto;
+    }
+    .gotfred-text-container p{
+      padding: 0;
+    }
   
   /* forside bestil */
     .forside-bestil {
-      max-width: 100%;
+     height: 50vh;
+     
+    
       
     }
+
+    #drinkSlide{
+    margin: 4rem auto;
+  }
     .bestil-section {
       height: 4rem;
       width: 100%;
@@ -1670,10 +1745,13 @@ align-items: center;
       width: 100%;
       line-height: 1.4;
       padding: 1rem;
+     text-align: center;
     }
-    
+ 
     .forside-bog-text p {
-      font-size: 0.9rem;
+      font-size: 1rem;
+      text-align: start;
+ 
     }
     .forside-bog-text h2 {
       font-size: 1.4rem;
@@ -1713,8 +1791,7 @@ align-items: center;
     }
     #forhandlerknap {
       font-size: 0.7rem;
-      margin: 4.7rem;
-      padding: 0.5rem;
+
     }
     .faq-item {
       border-radius: 20px;
