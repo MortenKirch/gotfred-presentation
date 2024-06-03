@@ -1294,8 +1294,12 @@ align-items: center;
   h1{
       font-size: 2rem;
    }
+   .gotfred-cafe {
+    height: 30rem;
+   }
    .gotfred-storbillede {
     width: 400px;
+    height: auto;
     margin-left: 4vw;
    }
    .gotfred-text {
@@ -1306,8 +1310,18 @@ align-items: center;
    }
    #gotfred-cafe-h1 {
     font-size: 1.5rem;
+    padding-bottom: 0;
    }
+   .gotfred-text-container p {
+    line-height: 1.55rem;
+    padding: 0;
+    font-size: 1rem;
+  }
 
+  .forside-drikke {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
    #catering{
     font-size: 1.5rem;
    }
@@ -1330,9 +1344,14 @@ align-items: center;
     width: 400px;
     margin-left: 4vw;
   }
+ 
+  
   .forside-header {
-    height: 60vh;
+    height: 80vh;
+    background-image: url(../pictures/saeson-mobile.webp);
     margin-top: 0;
+    background-position-y: -80px;
+  
   }
   .season-text {
     margin-top: 3rem;
@@ -1427,6 +1446,11 @@ align-items: center;
     width: 80vw;
     margin: 0 auto;
     margin-bottom: 20px;
+  }
+  #kageh1 {
+    width: 95vw;
+    margin: 0 auto;
+    margin-top: 4rem;
   }
 
 }
