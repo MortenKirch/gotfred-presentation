@@ -3,7 +3,7 @@
 // DOMContentLoaded, sørger for at den loader content på siden først
 document.addEventListener("DOMContentLoaded", function() {
 //    forskellige billede sources i et array,
-    let images = ["/pictures/infographic/ig-aeblekage.webp","/pictures/infographic/ig-banoffee.webp","/pictures/infographic/ig-fragilite.webp","/pictures/infographic/ig-hindbaer.webp","/pictures/infographic/ig-peach.webp","/pictures/infographic/ig-yuzu.webp"];
+    let images = ["/pictures/infographic/ig-aeblekage.webp","/pictures/infographic/ig-banoffee.webp","/pictures/infographic/ig-hindbaer.webp","/pictures/infographic/ig-jordbaertaerte.webp","/pictures/infographic/ig-peach.webp","/pictures/infographic/ig-yuzu.webp"];
     let currentIndex = 0;
     let currentImage = document.getElementById('image-swap-om-os');
 
