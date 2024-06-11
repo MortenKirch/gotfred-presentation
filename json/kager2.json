@@ -8,6 +8,30 @@
           "navn": "æg"
         },
         {
+          "url" :"/pictures/ikoner/gluten-med.png",
+          "navn": "gluten"
+        },
+        {
+          "url" :"/pictures/ikoner/laktose-med.png",
+          "navn": "laktose"
+        },
+        {
+          "url" :"/pictures/ikoner/noedder-uden.png",
+          "navn": "ikke nødder"
+        }
+      
+      ]
+
+      },
+      {
+        "navn": "FRAGILITÉ",
+        "billede": "/pictures/produkter/fragillite.webp",
+        "beskrivelse": "Hasselnøddemarengs, mokkasmørcreme med kaffe fra @moodcoffee_aarhus, to slags nougatmousse, spiselige blomster",
+        "ikoner": [{
+          "url" :"/pictures/ikoner/egg.png",
+          "navn": "æg"
+        },
+        {
           "url" :"/pictures/ikoner/gluten-uden.png",
           "navn": "ikke gluten"
         },
@@ -21,7 +45,6 @@
         }
       
       ]
-
       },
       {
         "navn": "GAMMELDAGS ÆBLEKAGE",
@@ -104,8 +127,8 @@
           "navn": "æg"
         },
         {
-          "url" :"/pictures/ikoner/gluten-med.png",
-          "navn": "gluten"
+          "url" :"/pictures/ikoner/gluten-uden.png",
+          "navn": "ikke gluten"
         },
         {
           "url" :"/pictures/ikoner/laktose-med.png",
@@ -136,8 +159,8 @@
           "navn": "laktose"
         },
         {
-          "url" :"/pictures/ikoner/noedder-med.png",
-          "navn": "nødder"
+          "url" :"/pictures/ikoner/noedder-uden.png",
+          "navn": "ikke nødder"
         }
       
       ]
