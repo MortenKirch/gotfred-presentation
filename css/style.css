@@ -1602,7 +1602,7 @@ align-items: center;
       margin-bottom: 1.2rem;
     }
     .catering-form textarea{
-      width: 100%;
+      
       scrollbar-color: var(--blue);
       
     }
