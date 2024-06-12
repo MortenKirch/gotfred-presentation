@@ -19,7 +19,7 @@
           "url" :"/pictures/ikoner/noedder-uden.png",
           "navn": "ikke nødder"
         }
-      
+
       ]
 
       },
@@ -161,6 +161,10 @@
         {
           "url" :"/pictures/ikoner/noedder-uden.png",
           "navn": "ikke nødder"
+        },
+        {
+          "url" :"/pictures/ikoner/citrus.png",
+          "navn": "citrus"
         }
       
       ]
