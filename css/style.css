@@ -685,7 +685,8 @@ h1#catering {
   display: block;
   grid-column: span 2; 
   margin-bottom: 2rem;
- height: 2rem;
+  height: 2rem;
+  margin-top: 20px;
 
 }
 .catering-undertekst{
@@ -743,11 +744,9 @@ h2#bestil {
 
 .catering-form {
   display: grid;
- 
   gap: 0px 20px;
-
- justify-content: center;
-  padding-top: 30px;
+  justify-content: center;
+  padding-top: 50px;
   height: 30rem;
 }
 
