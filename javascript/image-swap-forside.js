@@ -1,6 +1,7 @@
 const drinks = [
-    { src: 'pictures/forside-slider-1.webp', text: 'FORFRISKENDE SAFT' },
-    { src: 'pictures/forside-slider-2.webp', text: 'KAFFEBØNNER AF HØJ KVALITET' }
+    { src: 'pictures/forside-slider-1.webp', text: 'FORFRISKENDE SAFTER' },
+    { src: 'pictures/forside-slider-2.webp', text: 'FORRISKENDE SAFTER' },
+    { src: 'pictures/forside-slider-3.webp', text: 'KAFFEBØNNER AF HØJ KVALITET' }
   ];
   
   let currentIndex = 0;
