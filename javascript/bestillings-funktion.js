@@ -28,8 +28,8 @@ function createProductElement(kage) {
     const productInfo = document.createElement("div");
     productInfo.classList.add("produkt-information");
 
-    const productImageContainer = document.createElement("div")
-    productImageContainer.classList.add("product-image-container")
+    const productImageContainer = document.createElement("div");
+    productImageContainer.classList.add("product-image-container");
     const productImage = document.createElement("img");
     productImage.classList.add("produkt-billede");
     productImage.src = kage.billede;
@@ -41,19 +41,19 @@ function createProductElement(kage) {
 
     const productIcons = createIcons(kage.ikoner);
 
-    const buttonsDiv = createQuantityButtons();
+    const buttonsDiv = createQuantityButtons(kage.navn);
 
     const addButton = document.createElement("button");
     addButton.type = "button";
     addButton.classList.add("tilfojButton", "produkt-tilfoj-knap");
     addButton.textContent = "Læg i kurv";
     addButton.onclick = function() {
-        displayValue(this.parentNode.querySelector(".output"), this);
-        updateTotalQuantity();
+        displayValue(this.parentNode.querySelector(".output"), this, kage.navn);
     };
-    productImageContainer.append(productImage)
+
+    productImageContainer.append(productImage);
     productInfo.append(productImageContainer, productDescription, productIcons, buttonsDiv, addButton);
-    figure.append(productName, productInfo, );
+    figure.append(productName, productInfo);
     parentElement.appendChild(figure);
 }
 
@@ -81,9 +81,7 @@ function createIcons(icons) {
     return productIcons;
 }
 
-
-
-function createQuantityButtons() {
+function createQuantityButtons(kageName) {
     const buttonsDiv = document.createElement("div");
 
     const outputInput = document.createElement("input");
@@ -91,6 +89,7 @@ function createQuantityButtons() {
     outputInput.classList.add("output", "produkt-button-value");
     outputInput.value = "0";
     outputInput.readOnly = true;
+    outputInput.dataset.kageName = kageName;
 
     const minusButton = document.createElement("button");
     minusButton.type = "button";
@@ -121,16 +120,14 @@ function adjustValue(outputField, change) {
     outputField.value = newValue;
 }
 
-function displayValue(outputField, addButton) {
+function displayValue(outputField, addButton, kageName) {
     let currentValue = parseInt(outputField.value);
     if (currentValue > 0) {
-        let productName = addButton.parentNode.parentNode.querySelector(".produkt-overskrift").textContent;
-
         let listItem = document.createElement("input");
-        listItem.value = `${currentValue}x ${productName}`;
+        listItem.value = `${currentValue}x ${kageName}`;
         listItem.classList.add("koeb-liste");
         listItem.readOnly = true;
-        listItem.name = "Kager";
+        listItem.dataset.kageName = kageName;
 
         let deleteItem = document.createElement("button");
         deleteItem.textContent = "Fjern";
@@ -174,318 +171,65 @@ const totalPriceElement = document.querySelector(".total-pris");
 
 function updateTotalQuantity() {
     const orderListItems = document.querySelectorAll(".koeb-liste");
-    totalQuantity = 0;
+    let totalRegularCakes = 0;
+    let totalPetitMix = 0;
+    let totalPrice = 0;
 
-    orderListItems.forEach(orderItem => {
-        const quantityText = orderItem.value.split("x")[0].trim();
-        const quantity = parseInt(quantityText);
-        if (!isNaN(quantity)) {
-            totalQuantity += quantity;
+    orderListItems.forEach(item => {
+        const parts = item.value.split("x ");
+        const quantity = parseInt(parts[0].trim());
+        const name = parts[1].trim();
+
+        if (name === "PETITTE MIX") {
+            totalPetitMix += quantity;
+            totalPrice += quantity * 145; // Adjust the price for Petit Mix if necessary
+        } else {
+            totalRegularCakes += quantity;
         }
     });
 
-    const priceForFour = 188;
-    const priceForSix = 280;
-    const priceForOne = 48;
-    let totalPrice = 0;
+    // Check for an odd number of regular cakes
+    if (totalRegularCakes % 2 !== 0) {
+        totalPriceElement.value = `Ulige antal kager`;
+        return;
+    }
 
-    if (totalQuantity === 1) {
-        totalPrice = priceForOne;
+    // Calculate price for regular cakes
+    if (totalRegularCakes == 1) {
         totalPriceElement.value = `Du mangler 3 kager`;
-    } else if (totalQuantity === 2) {
-        totalPrice = priceForOne * 2;
+        return;
+    } else if (totalRegularCakes == 2) {
         totalPriceElement.value = `Du mangler 2 kager`;
-    } else if (totalQuantity === 3) {
-        totalPrice = priceForOne * 3;
+        return;
+    } else if (totalRegularCakes == 3) {
         totalPriceElement.value = `Du mangler 1 kage`;
-    } else if (totalQuantity % 2 !== 0) {
-        totalPriceElement.value = `ulige antal kager`;
-    } else if (totalQuantity === 4) {
-        totalPrice = priceForFour;
-        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-    } else if (totalQuantity === 6) {
-        totalPrice = priceForSix;
-        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-    } else if (totalQuantity === 8) {
-        totalPrice = priceForFour * 2;
-        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-    } else if (totalQuantity === 10) {
-        totalPrice = priceForSix + priceForFour;
-        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-    } else if (totalQuantity === 12) {
-        totalPrice = priceForSix * 2;
-        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-    } else if (totalQuantity === 14) {
-        totalPrice = priceForFour * 2 + priceForSix;
-        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-    } else if (totalQuantity === 16) {
-        totalPrice = priceForSix * 2 + priceForFour;
-        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-    } else if (totalQuantity === 18) {
-        totalPrice = priceForSix * 3;
-        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-    } else if (totalQuantity === 20) {
-        totalPrice = priceForSix * 2 + priceForFour * 2;
-        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-    }
-
-    console.log(totalQuantity);
-    console.log("Total pris:", totalPrice);
-}
-
-function formSubmit(event) {
-    event.preventDefault();
-
-    if (totalQuantity < 4) {
-        alert("Du skal bestille mindst 4 kager");
+        return;
+    } else if (totalRegularCakes == 4) {
+        totalPrice += 188;
+    } else if (totalRegularCakes == 6) {
+        totalPrice += 280;
+    } else if (totalRegularCakes == 8) {
+        totalPrice += 188 * 2;
+    } else if (totalRegularCakes == 10) {
+        totalPrice += 280 + 188;
+    } else if (totalRegularCakes == 12) {
+        totalPrice += 280 * 2;
+    } else if (totalRegularCakes == 14) {
+        totalPrice += 280 + 188 * 2;
+    } else if (totalRegularCakes == 16) {
+        totalPrice += 280 * 2 + 188;
+    } else if (totalRegularCakes == 18) {
+        totalPrice += 280 * 3;
+    } else if (totalRegularCakes == 20) {
+        totalPrice += 280 * 2 + 188 * 2;
     } else {
-        alert(`Tak for din bestilling! Du har bestilt ${totalQuantity} kager.`);
+        alert("Du kan maksimalt vælge 20 kager brug venligst kontakt formularen på kontakt os siden");
+        return;
     }
+
+    // Update total price
+    totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
 }
 
 
-function formSubmit(event) {
-    event.preventDefault(); 
 
-    if (totalQuantity < 4) {
-        alert("Vælg venligst mindst 4 kager.");
-    } else if (totalQuantity > 20) {
-        alert("Du kan maksimalt vælge 20 kager.");
-    }
-    else {
-        form.submit()
-    }
-}
-
-// laver en eventlistener til at kalde formSubmit
-const form = document.querySelector(".form");
-form.addEventListener("submit", formSubmit);
-
-
-// const parentElement = document.getElementById("myForm");
-// const url = "../json/kager2.json";
-// let totalQuantity = 0;
-
-// fetch(url)
-//     .then(response => {
-//         if (!response.ok) {
-//             throw new Error("fejl i responsen");
-//         }
-//         return response.json();
-//     })
-//     .then(data => {
-//         const kageData = data.kager;
-//         kageData.forEach(kage => createProductElement(kage));
-//     })
-//     .catch(error => {
-//         console.error("Error:", error);
-//     });
-
-// function createProductElement(kage) {
-//     const figure = document.createElement("figure");
-//     figure.classList.add("produkt-figure");
-
-//     const productName = document.createElement("h2");
-//     productName.classList.add("produkt-overskrift");
-//     productName.textContent = kage.navn;
-
-//     const productInfo = document.createElement("div");
-//     productInfo.classList.add("produkt-information");
-
-//     const productImageContainer = document.createElement("div")
-//     productImageContainer.classList.add("product-image-container")
-//     const productImage = document.createElement("img");
-//     productImage.classList.add("produkt-billede");
-//     productImage.src = kage.billede;
-//     productImage.alt = `billede af ${kage.navn}`;
-
-//     const productDescription = document.createElement("p");
-//     productDescription.classList.add("produkt-p");
-//     productDescription.textContent = kage.beskrivelse;
-
-//     const productIcons = createIcons(kage.ikoner);
-
-//     const buttonsDiv = createQuantityButtons(productName.textContent);
-
-//     productImageContainer.append(productImage);
-//     productInfo.append(productImageContainer, productDescription, productIcons, buttonsDiv);
-//     figure.append(productName, productInfo);
-//     parentElement.appendChild(figure);
-// }
-
-// function createIcons(icons) {
-//     const productIcons = document.createElement("div");
-//     productIcons.classList.add("produkt-ikoner");
-
-//     icons.forEach(icon => {
-//         const iconContainer = document.createElement("div");
-//         iconContainer.classList.add("product-icon-tooltip");
-
-//         const iconElement = document.createElement("img");
-//         iconElement.src = icon.url;
-//         iconElement.alt = icon.navn;
-//         iconElement.classList.add("product-icon");
-
-//         const tooltipText = document.createElement("span");
-//         tooltipText.classList.add("tooltiptext");
-//         tooltipText.textContent = `Denne kage indeholder ${icon.navn}`;
-
-//         iconContainer.appendChild(iconElement);
-//         iconContainer.appendChild(tooltipText);
-//         productIcons.appendChild(iconContainer);
-//     });
-//     return productIcons;
-// }
-
-// function createQuantityButtons(productName) {
-//     const buttonsDiv = document.createElement("div");
-
-//     const outputInput = document.createElement("input");
-//     outputInput.type = "text";
-//     outputInput.classList.add("output", "produkt-button-value");
-//     outputInput.value = "0";
-//     outputInput.readOnly = true;
-
-//     const minusButton = document.createElement("button");
-//     minusButton.type = "button";
-//     minusButton.classList.add("produkt-minus-button");
-//     minusButton.textContent = "-";
-//     minusButton.onclick = function() {
-//         adjustValue(outputInput, productName, -1);
-//     };
-
-//     const plusButton = document.createElement("button");
-//     plusButton.type = "button";
-//     plusButton.classList.add("produkt-plus-button");
-//     plusButton.textContent = "+";
-//     plusButton.onclick = function() {
-//         adjustValue(outputInput, productName, 1);
-//     };
-
-//     buttonsDiv.append(minusButton, outputInput, plusButton);
-//     return buttonsDiv;
-// }
-
-// function adjustValue(outputField, productName, change) {
-//     let currentValue = parseInt(outputField.value);
-//     let newValue = currentValue + change;
-//     if (newValue < 0) {
-//         newValue = 0;
-//     }
-//     outputField.value = newValue;
-//     updateDisplayArea(productName, newValue);
-//     updateTotalQuantity();
-// }
-
-// function updateDisplayArea(productName, quantity) {
-//     const displayArea = document.querySelector(".displayArea");
-//     let existingItem = Array.from(displayArea.querySelectorAll(".koeb-liste"))
-//         .find(item => item.dataset.productName === productName);
-
-//     if (quantity > 0) {
-//         if (existingItem) {
-//             existingItem.value = `${quantity}x ${productName}`;
-//         } else {
-//             let listItem = document.createElement("input");
-//             listItem.value = `${quantity}x ${productName}`;
-//             listItem.classList.add("koeb-liste");
-//             listItem.readOnly = true;
-//             listItem.dataset.productName = productName;
-//             listItem.name = "Kager";
-
-//             let deleteItem = document.createElement("button");
-//             deleteItem.textContent = "Fjern";
-//             deleteItem.classList.add("removeButton");
-
-//             deleteItem.addEventListener("click", function() {
-//                 displayArea.removeChild(listItem);
-//                 displayArea.removeChild(deleteItem);
-//                 updateTotalQuantity();
-//             });
-
-//             displayArea.append(deleteItem, listItem);
-//         }
-//     } else if (existingItem) {
-//         displayArea.removeChild(existingItem.previousSibling);
-//         displayArea.removeChild(existingItem);
-//     }
-// }
-
-// const totalPriceElement = document.querySelector(".total-pris");
-
-// function updateTotalQuantity() {
-//     const orderListItems = document.querySelectorAll(".koeb-liste");
-//     totalQuantity = 0;
-
-//     orderListItems.forEach(orderItem => {
-//         const quantityText = orderItem.value.split("x")[0].trim();
-//         const quantity = parseInt(quantityText);
-//         if (!isNaN(quantity)) {
-//             totalQuantity += quantity;
-//         }
-//     });
-
-//     const priceForFour = 188;
-//     const priceForSix = 280;
-//     const priceForOne = 48;
-//     let totalPrice = 0;
-
-//     if (totalQuantity === 1) {
-//         totalPrice = priceForOne;
-//         totalPriceElement.value = `Du mangler 3 kager`;
-//     } else if (totalQuantity === 2) {
-//         totalPrice = priceForOne * 2;
-//         totalPriceElement.value = `Du mangler 2 kager`;
-//     } else if (totalQuantity === 3) {
-//         totalPrice = priceForOne * 3;
-//         totalPriceElement.value = `Du mangler 1 kage`;
-//     } else if (totalQuantity % 2 !== 0) {
-//         totalPriceElement.value = `ulige antal kager`;
-//     } else if (totalQuantity === 4) {
-//         totalPrice = priceForFour;
-//         totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-//     } else if (totalQuantity === 6) {
-//         totalPrice = priceForSix;
-//         totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-//     } else if (totalQuantity === 8) {
-//         totalPrice = priceForFour * 2;
-//         totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-//     } else if (totalQuantity === 10) {
-//         totalPrice = priceForSix + priceForFour;
-//         totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-//     } else if (totalQuantity === 12) {
-//         totalPrice = priceForSix * 2;
-//         totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-//     } else if (totalQuantity === 14) {
-//         totalPrice = priceForFour * 2 + priceForSix;
-//         totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-//     } else if (totalQuantity === 16) {
-//         totalPrice = priceForSix * 2 + priceForFour;
-//         totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-//     } else if (totalQuantity === 18) {
-//         totalPrice = priceForSix * 3;
-//         totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-//     } else if (totalQuantity === 20) {
-//         totalPrice = priceForSix * 2 + priceForFour * 2;
-//         totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
-//     }
-
-//     console.log(totalQuantity);
-//     console.log("Total pris:", totalPrice);
-// }
-
-// function formSubmit(event) {
-//     event.preventDefault();
-
-//     if (totalQuantity < 4) {
-//         alert("Vælg venligst mindst 4 kager.");
-//     } else if (totalQuantity > 20) {
-//         alert("Du kan maksimalt vælge 20 kager.");
-//     } else {
-//         form.submit();
-//     }
-// }
-
-// // laver en eventlistener til at kalde formSubmit
-// const form = document.querySelector(".form");
-// form.addEventListener("submit", formSubmit);
