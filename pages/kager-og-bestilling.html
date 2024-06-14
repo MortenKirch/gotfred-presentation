@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kager og bestilling</title>
     <meta name="title" content="Kager og bestilling">
-    <meta name="description" content="Gotfred er et patisserie i midten af Aarhus, tæt på Dokken. Vi laver hjemmelavet sæsompræget konditori kager af højeste kvalitet.">
-    <meta name="keywords" content="patisserie, konditori, bager, café, catering, gotfred, desserter, bageri, portionskager  specialiteter, delicatesser">
+    <meta name="description" content="Gotfred er et patisserie i midten af Aarhus, tæt på Dokken. Vi laver hjemmelavet sæsonpræget konditori kager af højeste kvalitet.">
+    <meta name="keywords" content="patisserie, konditori, bager, café, catering, gotfred, desserter, bageri, portionskager, specialiteter, delicatesser">
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="DK-82" />
     <meta name="geo.placename" content="Aarhus" />
@@ -14,16 +14,15 @@
     <meta name="ICBM" content="56.154937, 10.212208" />
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GQB38SPGP7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQB38SPGP7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GQB38SPGP7');
+    </script>
 
-  gtag('config', 'G-GQB38SPGP7');
-</script>
     <link rel="icon" href="/pictures/logo/favicon.png" type="image/png">
-
 
     <!-- external references -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -33,11 +32,8 @@
 
     <link rel="stylesheet" href="/css/style.css">
     <script type="module" src="/javascript/nav.js"></script>
-
-    
 </head>
 <body>
-
     <header class="nav-header">
         <nav class="nav container">
             <div class="nav-logo-container">
@@ -63,26 +59,22 @@
         </nav>
       </header>
 
-
     <h1 id="kageh1">GUIDE TIL FORUDBESTILLING AF PORTIONSKAGER</h1>
-    <p class="guide-tekst">Når du vil forudbestille portionskager hos os, skal du bestille minimum 4 stks.
-        Kagerne bliver pakket i bokse á 4 stks. til 188 kr,- eller 6 stks. til 280 kr,-
+    <p class="guide-tekst">
+        Når du vil forudbestille portionskager hos os, skal du bestille minimum 4 stks. Kagerne bliver pakket i bokse á 4 stks. til 188 kr,- eller 6 stks. til 280 kr,-
         <br> Vær opmærksom på, at portionskager skal forudbestilles senest dagen før.
-    <br>
-    OBS - Petite Mix skal forudbestilles mindst 3 dage inden afhentning.</p>
-    
+        <br> OBS - Petite Mix skal forudbestilles mindst 3 dage inden afhentning.
+    </p>
     
     <h2 class="forudbestil-kager-h2">FORUDBESTIL KAGER</h2>
     <form action="https://formspree.io/f/meqynkkn" method="post" class="form">
-        <main id="myForm">
-            
-        </main>
+        <main id="myForm"></main>
+        
         <h2 class="bestilling-overskrift">OVERSIGT OVER BESTILLING</h2>
-    
-
         <section class="produkt-formular-section">
             <div class="orderList displayArea">
                 <input type="text" name="Pris" placeholder="TOTAL PRIS:" class="total-pris" readonly>
+                <input type="hidden" id="maxItems" name="maxItems" value="0">
             </div>
             <div class="produkt-formular">  
                 <h2 class="overskrift-udfyld">UDFYLD INFORMATION</h2>
@@ -95,7 +87,6 @@
         </section>
     </form>
 
-    
     <footer class="footer">
         <div class="container">
             <div class="social-icons">
@@ -106,7 +97,6 @@
             </div>
     
             <div class="info">
-            
                 <p class="åbningstider-tekst">Tirsdag - Fredag 12:30 - 17:30 &nbsp;|&nbsp; Lørdag - Søndag 11:30 - 17:30</p>
             </div>
             
@@ -114,9 +104,9 @@
                 <a href="mailto:gotfred.aarhus@outlook.dk"><i class="fa-regular fa-envelope" aria-label="Mail ikon"></i></a>
                 <p>Skriv til os</p>
             </div>
-            
         </div>
-      </footer>
-      <script src="/javascript/bestillings-funktion.js"></script>
-    </body>
-    </html>
+    </footer>
+    
+    <script src="/javascript/bestillings-funktion.js"></script>
+</body>
+</html>

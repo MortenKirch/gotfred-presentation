@@ -169,6 +169,35 @@
       
       ]
 
+      },
+      {
+        "navn": "PETITTE MIX",
+        "billede": "/pictures/produkter/yuzu-taerte.webp",
+        "beskrivelse": "Vores Petitte mix er 10 små blandet kager, med mango og passionsfrugt, citron marengs og passionsfrugt marengs",
+        "pris": 145,
+        "ikoner": [{
+          "url" :"/pictures/ikoner/egg.png",
+          "navn": "æg"
+        },
+        {
+          "url" :"/pictures/ikoner/gluten-med.png",
+          "navn": "gluten"
+        },
+        {
+          "url" :"/pictures/ikoner/laktose-med.png",
+          "navn": "laktose"
+        },
+        {
+          "url" :"/pictures/ikoner/noedder-uden.png",
+          "navn": "ikke nødder"
+        },
+        {
+          "url" :"/pictures/ikoner/citrus.png",
+          "navn": "citrus"
+        }
+      
+      ]
+
       }
    
     ]
