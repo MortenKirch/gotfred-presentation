@@ -166,7 +166,6 @@ function styleAddButton(button, isAdded) {
         button.textContent = "Læg i kurv";
     }
 }
-
 const totalPriceElement = document.querySelector(".total-pris");
 
 function updateTotalQuantity() {
@@ -187,6 +186,22 @@ function updateTotalQuantity() {
             totalRegularCakes += quantity;
         }
     });
+
+    // Update totalQuantity for regular cakes only
+    totalQuantity = totalRegularCakes;
+
+    // Check if only the Petit Mix is ordered
+    if (totalRegularCakes === 0 && totalPetitMix > 0) {
+        totalPriceElement.value = `Total pris: ${totalPetitMix * 145} DKK`;
+        return;
+    }
+
+    // Check if there are no cakes in the order list
+    if (totalRegularCakes === 0 && totalPetitMix === 0) {
+        // No cakes in the order list
+        totalPriceElement.value = "Vælg venligst mindst 4 kager";
+        return;
+    }
 
     // Check for an odd number of regular cakes
     if (totalRegularCakes % 2 !== 0) {
@@ -230,6 +245,38 @@ function updateTotalQuantity() {
     // Update total price
     totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
 }
+function formSubmit(event) {
+    event.preventDefault();
 
+    const orderListItems = document.querySelectorAll(".koeb-liste");
+    let totalRegularCakes = 0;
+    let totalPetitMix = 0;
 
+    orderListItems.forEach(item => {
+        const parts = item.value.split("x ");
+        const quantity = parseInt(parts[0].trim());
+        const name = parts[1].trim();
+
+        if (name === "PETITTE MIX") {
+            totalPetitMix += quantity;
+        } else {
+            totalRegularCakes += quantity;
+        }
+    });
+
+    // Update totalQuantity for regular cakes only
+    totalQuantity = totalRegularCakes;
+
+    if (totalRegularCakes < 4 && totalPetitMix === 0) {
+        alert("Vælg venligst mindst 4 af de almindelige kager.");
+    } else if (totalRegularCakes > 20) {
+        alert("Du kan maksimalt vælge 20 af de almindelige kager.");
+    } else {
+        form.submit();
+    }
+}
+
+// Add an event listener to call formSubmit
+const form = document.querySelector(".form");
+form.addEventListener("submit", formSubmit);
 
