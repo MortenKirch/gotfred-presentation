@@ -253,7 +253,7 @@ h2{
 .forside-bog-text p {
   color: var(--offblack);
   font-size: 1.1rem;
-  
+  margin-bottom: 0.9rem!important;
   margin: 0 auto;
 }
 
@@ -274,7 +274,7 @@ h2{
 }
 
 #forhandlerknap{
-  margin-left: 7rem;
+  margin-left: 8rem;
     background-color:var(--blue);
     color: white;
     padding: 8px 20px;
