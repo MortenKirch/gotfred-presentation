@@ -252,6 +252,10 @@ function formSubmit(event) {
     let totalRegularCakes = 0;
     let totalPetitMix = 0;
 
+    // Clear previous hidden inputs
+    const hiddenInputs = document.querySelectorAll(".order-detail");
+    hiddenInputs.forEach(input => input.remove());
+
     orderListItems.forEach(item => {
         const parts = item.value.split("x ");
         const quantity = parseInt(parts[0].trim());
@@ -262,6 +266,14 @@ function formSubmit(event) {
         } else {
             totalRegularCakes += quantity;
         }
+
+        // Create a hidden input for each cake in the order list
+        const hiddenInput = document.createElement("input");
+        hiddenInput.type = "hidden";
+        hiddenInput.name = `Bestilte Kager`;
+        hiddenInput.value = `${quantity}x ${name}`;
+        hiddenInput.classList.add("order-detail");
+        form.appendChild(hiddenInput);
     });
 
     // Update totalQuantity for regular cakes only
@@ -279,4 +291,5 @@ function formSubmit(event) {
 // Add an event listener to call formSubmit
 const form = document.querySelector(".form");
 form.addEventListener("submit", formSubmit);
+
 
