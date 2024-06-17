@@ -179,7 +179,7 @@ function updateTotalQuantity() {
         const quantity = parseInt(parts[0].trim());
         const name = parts[1].trim();
 
-        if (name === "PETITTE MIX") {
+        if (name === "PETITE MIX") {
             totalPetitMix += quantity;
             totalPrice += quantity * 145; // Adjust the price for Petit Mix if necessary
         } else {
@@ -261,7 +261,7 @@ function formSubmit(event) {
         const quantity = parseInt(parts[0].trim());
         const name = parts[1].trim();
 
-        if (name === "PETITTE MIX") {
+        if (name === "PETITE MIX") {
             totalPetitMix += quantity;
         } else {
             totalRegularCakes += quantity;
@@ -280,11 +280,11 @@ function formSubmit(event) {
     // Update totalQuantity for regular cakes only
     totalQuantity = totalRegularCakes;
 
-    if (totalRegularCakes < 4 && totalPetitMix === 0 ) {
+    if (totalRegularCakes < 4) {
         alert("Vælg venligst mindst 4 af de almindelige kager.");
     } else if (totalRegularCakes > 20) {
         alert("Du kan maksimalt vælge 20 af de almindelige kager.");
-    } else if (totalRegularCakes % 2 !== 0 && totalPetitMix === 0){
+    } else if (totalRegularCakes % 2 !== 0){
         alert("du har valgt et ulige antal kager du skal vælge et lige antal,")
     } else{
         form.submit();
