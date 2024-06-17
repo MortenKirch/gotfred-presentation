@@ -270,6 +270,7 @@ function formSubmit(event) {
         // Create a hidden input for each cake in the order list
         const hiddenInput = document.createElement("input");
         hiddenInput.type = "hidden";
+        hiddenInput.readOnly = true;
         hiddenInput.name = `Bestilte Kager`;
         hiddenInput.value = `${quantity}x ${name}`;
         hiddenInput.classList.add("order-detail");
@@ -279,11 +280,13 @@ function formSubmit(event) {
     // Update totalQuantity for regular cakes only
     totalQuantity = totalRegularCakes;
 
-    if (totalRegularCakes < 4 && totalPetitMix === 0) {
+    if (totalRegularCakes < 4 && totalPetitMix === 0 ) {
         alert("Vælg venligst mindst 4 af de almindelige kager.");
     } else if (totalRegularCakes > 20) {
         alert("Du kan maksimalt vælge 20 af de almindelige kager.");
-    } else {
+    } else if (totalRegularCakes % 2 !== 0 && totalPetitMix === 0){
+        alert("du har valgt et ulige antal kager du skal vælge et lige antal,")
+    } else{
         form.submit();
     }
 }
