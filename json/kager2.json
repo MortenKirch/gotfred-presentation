@@ -171,9 +171,9 @@
 
       },
       {
-        "navn": "PETITTE MIX",
+        "navn": "PETITE MIX",
         "billede": "/pictures/produkter/petitMix.jpg",
-        "beskrivelse": "Vores Petitte mix er 10 små blandet kager, med mango og passionsfrugt, citron marengs og passionsfrugt marengs",
+        "beskrivelse": "Vores Petite Mix er 10 små blandede kager med: Citron Marengs, Mango Passion og Passion Marengs",
         "pris": 145,
         "ikoner": [{
           "url" :"/pictures/ikoner/egg.png",
